@@ -1,0 +1,1424 @@
+{
+  "description": "One fixed 300-person survey and 10-product split; not the 500-draw headline estimate.",
+  "dataset": "LLM-Digital-Twin/Twin-2K-500",
+  "revision": "f883165a3026fde855dfd448e0cd16443ab257b6",
+  "source": "https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500",
+  "license": "CC-BY-4.0; see NOTICE for attribution",
+  "people": 2058,
+  "survey_people": 300,
+  "seed": 0,
+  "surveyed": [
+    "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+    "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+    "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+    "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+    "Little Debbie Zebra Cakes, 13 oz",
+    "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+    "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+    "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+    "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+    "Great Value Milk Whole Vitamin D Gallon"
+  ],
+  "cells": [
+    {
+      "product": "ARM & HAMMER Pure Baking Soda, For Baking, Cleaning & Deodorizing, 1 lb Box",
+      "quintile": 0,
+      "human": 93.91534391534393,
+      "survey": 92.85714285714286,
+      "twin": 95.20030234315949
+    },
+    {
+      "product": "ARM & HAMMER Pure Baking Soda, For Baking, Cleaning & Deodorizing, 1 lb Box",
+      "quintile": 1,
+      "human": 91.76882661996497,
+      "survey": 96.29629629629629,
+      "twin": 99.12434325744309
+    },
+    {
+      "product": "ARM & HAMMER Pure Baking Soda, For Baking, Cleaning & Deodorizing, 1 lb Box",
+      "quintile": 2,
+      "human": 86.45833333333334,
+      "survey": 80.0,
+      "twin": 99.03273809523809
+    },
+    {
+      "product": "ARM & HAMMER Pure Baking Soda, For Baking, Cleaning & Deodorizing, 1 lb Box",
+      "quintile": 3,
+      "human": 80.23032629558541,
+      "survey": 79.22077922077922,
+      "twin": 98.10803400054839
+    },
+    {
+      "product": "ARM & HAMMER Pure Baking Soda, For Baking, Cleaning & Deodorizing, 1 lb Box",
+      "quintile": 4,
+      "human": 65.15151515151516,
+      "survey": 67.85714285714286,
+      "twin": 94.5887445887446
+    },
+    {
+      "product": "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+      "quintile": 0,
+      "human": 96.3157894736842,
+      "survey": 95.08196721311475,
+      "twin": 87.66917293233084
+    },
+    {
+      "product": "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+      "quintile": 1,
+      "human": 88.15331010452961,
+      "survey": 90.54054054054053,
+      "twin": 95.86859133897461
+    },
+    {
+      "product": "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+      "quintile": 2,
+      "human": 75.97765363128491,
+      "survey": 76.0,
+      "twin": 89.46528332003193
+    },
+    {
+      "product": "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+      "quintile": 3,
+      "human": 55.26802218114602,
+      "survey": 56.57894736842105,
+      "twin": 78.1357274887774
+    },
+    {
+      "product": "Angel Soft Toilet Paper, 9 Mega Rolls, Soft and Strong Toilet Tissue",
+      "quintile": 4,
+      "human": 43.75,
+      "survey": 39.0625,
+      "twin": 63.09523809523809
+    },
+    {
+      "product": "Bounty Select-a-Size Paper Towels, 12 Double Rolls, White",
+      "quintile": 0,
+      "human": 91.4364640883978,
+      "survey": 89.36170212765957,
+      "twin": 83.78058405682715
+    },
+    {
+      "product": "Bounty Select-a-Size Paper Towels, 12 Double Rolls, White",
+      "quintile": 1,
+      "human": 70.22900763358778,
+      "survey": 62.31884057971014,
+      "twin": 60.08724100327154
+    },
+    {
+      "product": "Bounty Select-a-Size Paper Towels, 12 Double Rolls, White",
+      "quintile": 2,
+      "human": 30.21978021978022,
+      "survey": 30.58823529411765,
+      "twin": 22.7891156462585
+    },
+    {
+      "product": "Bounty Select-a-Size Paper Towels, 12 Double Rolls, White",
+      "quintile": 3,
+      "human": 12.138728323699421,
+      "survey": 10.416666666666668,
+      "twin": 6.936416184971098
+    },
+    {
+      "product": "Bounty Select-a-Size Paper Towels, 12 Double Rolls, White",
+      "quintile": 4,
+      "human": 6.082725060827251,
+      "survey": 7.8431372549019605,
+      "twin": 5.839416058394159
+    },
+    {
+      "product": "Bud Light Beer, 24 Pack, 12 fl oz Aluminum Cans, 4.2% ABV, Domestic Lager",
+      "quintile": 0,
+      "human": 48.40579710144928,
+      "survey": 44.44444444444444,
+      "twin": 51.01449275362319
+    },
+    {
+      "product": "Bud Light Beer, 24 Pack, 12 fl oz Aluminum Cans, 4.2% ABV, Domestic Lager",
+      "quintile": 1,
+      "human": 27.105263157894736,
+      "survey": 23.52941176470588,
+      "twin": 42.29323308270677
+    },
+    {
+      "product": "Bud Light Beer, 24 Pack, 12 fl oz Aluminum Cans, 4.2% ABV, Domestic Lager",
+      "quintile": 2,
+      "human": 11.16751269035533,
+      "survey": 12.82051282051282,
+      "twin": 24.776408025138988
+    },
+    {
+      "product": "Bud Light Beer, 24 Pack, 12 fl oz Aluminum Cans, 4.2% ABV, Domestic Lager",
+      "quintile": 3,
+      "human": 5.571847507331378,
+      "survey": 6.122448979591836,
+      "twin": 10.473397570171764
+    },
+    {
+      "product": "Bud Light Beer, 24 Pack, 12 fl oz Aluminum Cans, 4.2% ABV, Domestic Lager",
+      "quintile": 4,
+      "human": 5.7356608478802995,
+      "survey": 5.084745762711865,
+      "twin": 7.623797648735305
+    },
+    {
+      "product": "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+      "quintile": 0,
+      "human": 71.2468193384224,
+      "survey": 64.28571428571429,
+      "twin": 71.90112686295892
+    },
+    {
+      "product": "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+      "quintile": 1,
+      "human": 45.6,
+      "survey": 52.63157894736842,
+      "twin": 57.333333333333336
+    },
+    {
+      "product": "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+      "quintile": 2,
+      "human": 25.71428571428571,
+      "survey": 22.988505747126435,
+      "twin": 29.438775510204078
+    },
+    {
+      "product": "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+      "quintile": 3,
+      "human": 14.48087431693989,
+      "survey": 9.523809523809524,
+      "twin": 13.583138173302107
+    },
+    {
+      "product": "Capri Sun Variety Pack with Fruit Punch, Strawberry Kiwi & Pacific Cooler Juice Box Pouches, 30 ct Box, 6 fl oz Pouches",
+      "quintile": 4,
+      "human": 16.483516483516482,
+      "survey": 12.068965517241379,
+      "twin": 10.282574568288853
+    },
+    {
+      "product": "Chobani Non-Fat Greek Yogurt, Vanilla Blended 32 oz, Plastic",
+      "quintile": 0,
+      "human": 82.7127659574468,
+      "survey": 88.52459016393442,
+      "twin": 80.129179331307
+    },
+    {
+      "product": "Chobani Non-Fat Greek Yogurt, Vanilla Blended 32 oz, Plastic",
+      "quintile": 1,
+      "human": 64.92537313432835,
+      "survey": 72.15189873417721,
+      "twin": 76.5724946695096
+    },
+    {
+      "product": "Chobani Non-Fat Greek Yogurt, Vanilla Blended 32 oz, Plastic",
+      "quintile": 2,
+      "human": 42.7027027027027,
+      "survey": 53.84615384615385,
+      "twin": 51.96911196911197
+    },
+    {
+      "product": "Chobani Non-Fat Greek Yogurt, Vanilla Blended 32 oz, Plastic",
+      "quintile": 3,
+      "human": 29.64824120603015,
+      "survey": 35.63218390804598,
+      "twin": 31.179708064130175
+    },
+    {
+      "product": "Chobani Non-Fat Greek Yogurt, Vanilla Blended 32 oz, Plastic",
+      "quintile": 4,
+      "human": 17.857142857142858,
+      "survey": 6.382978723404255,
+      "twin": 17.46467817896389
+    },
+    {
+      "product": "Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz",
+      "quintile": 0,
+      "human": 82.87292817679558,
+      "survey": 85.18518518518519,
+      "twin": 81.45224940805052
+    },
+    {
+      "product": "Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz",
+      "quintile": 1,
+      "human": 62.05035971223022,
+      "survey": 62.0253164556962,
+      "twin": 83.50462487153133
+    },
+    {
+      "product": "Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz",
+      "quintile": 2,
+      "human": 47.39583333333333,
+      "survey": 40.0,
+      "twin": 68.00595238095238
+    },
+    {
+      "product": "Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz",
+      "quintile": 3,
+      "human": 28.74779541446208,
+      "survey": 28.39506172839506,
+      "twin": 45.225497606449984
+    },
+    {
+      "product": "Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz",
+      "quintile": 4,
+      "human": 16.010498687664043,
+      "survey": 12.5,
+      "twin": 25.046869141357327
+    },
+    {
+      "product": "Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans",
+      "quintile": 0,
+      "human": 67.15867158671587,
+      "survey": 75.30864197530865,
+      "twin": 74.96046389035318
+    },
+    {
+      "product": "Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans",
+      "quintile": 1,
+      "human": 45.05494505494506,
+      "survey": 50.0,
+      "twin": 60.98901098901099
+    },
+    {
+      "product": "Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans",
+      "quintile": 2,
+      "human": 26.545454545454543,
+      "survey": 23.456790123456788,
+      "twin": 31.792207792207797
+    },
+    {
+      "product": "Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans",
+      "quintile": 3,
+      "human": 13.368983957219251,
+      "survey": 10.0,
+      "twin": 20.320855614973258
+    },
+    {
+      "product": "Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans",
+      "quintile": 4,
+      "human": 10.720268006700168,
+      "survey": 10.638297872340425,
+      "twin": 14.022493419478343
+    },
+    {
+      "product": "Coca-Cola Zero Sugar Soda Pop, 16.9 fl oz, 6 Pack Cans",
+      "quintile": 0,
+      "human": 62.994350282485875,
+      "survey": 64.91228070175438,
+      "twin": 81.71912832929783
+    },
+    {
+      "product": "Coca-Cola Zero Sugar Soda Pop, 16.9 fl oz, 6 Pack Cans",
+      "quintile": 1,
+      "human": 36.18090452261307,
+      "survey": 30.0,
+      "twin": 62.4551328068916
+    },
+    {
+      "product": "Coca-Cola Zero Sugar Soda Pop, 16.9 fl oz, 6 Pack Cans",
+      "quintile": 2,
+      "human": 32.663316582914575,
+      "survey": 32.0,
+      "twin": 40.7035175879397
+    },
+    {
+      "product": "Coca-Cola Zero Sugar Soda Pop, 16.9 fl oz, 6 Pack Cans",
+      "quintile": 3,
+      "human": 17.350746268656717,
+      "survey": 15.068493150684931,
+      "twin": 29.797441364605543
+    },
+    {
+      "product": "Coca-Cola Zero Sugar Soda Pop, 16.9 fl oz, 6 Pack Cans",
+      "quintile": 4,
+      "human": 12.365591397849462,
+      "survey": 5.454545454545454,
+      "twin": 21.006144393241165
+    },
+    {
+      "product": "Doritos Nacho Cheese Tortilla Snack Chips, Party Size, 14.5 oz Bag",
+      "quintile": 0,
+      "human": 82.53521126760563,
+      "survey": 82.97872340425532,
+      "twin": 82.45472837022133
+    },
+    {
+      "product": "Doritos Nacho Cheese Tortilla Snack Chips, Party Size, 14.5 oz Bag",
+      "quintile": 1,
+      "human": 70.40816326530613,
+      "survey": 73.07692307692307,
+      "twin": 75.4008746355685
+    },
+    {
+      "product": "Doritos Nacho Cheese Tortilla Snack Chips, Party Size, 14.5 oz Bag",
+      "quintile": 2,
+      "human": 33.035714285714285,
+      "survey": 30.76923076923077,
+      "twin": 41.0969387755102
+    },
+    {
+      "product": "Doritos Nacho Cheese Tortilla Snack Chips, Party Size, 14.5 oz Bag",
+      "quintile": 3,
+      "human": 13.315926892950392,
+      "survey": 20.634920634920633,
+      "twin": 18.23946288698247
+    },
+    {
+      "product": "Doritos Nacho Cheese Tortilla Snack Chips, Party Size, 14.5 oz Bag",
+      "quintile": 4,
+      "human": 8.967391304347826,
+      "survey": 6.382978723404255,
+      "twin": 12.888198757763973
+    },
+    {
+      "product": "Duracell Coppertop AA Battery, Long Lasting Double A Batteries, 16 Pack",
+      "quintile": 0,
+      "human": 91.33858267716536,
+      "survey": 89.83050847457628,
+      "twin": 84.51443569553805
+    },
+    {
+      "product": "Duracell Coppertop AA Battery, Long Lasting Double A Batteries, 16 Pack",
+      "quintile": 1,
+      "human": 68.13186813186813,
+      "survey": 68.51851851851852,
+      "twin": 82.14285714285714
+    },
+    {
+      "product": "Duracell Coppertop AA Battery, Long Lasting Double A Batteries, 16 Pack",
+      "quintile": 2,
+      "human": 40.73426573426573,
+      "survey": 43.373493975903614,
+      "twin": 44.655344655344656
+    },
+    {
+      "product": "Duracell Coppertop AA Battery, Long Lasting Double A Batteries, 16 Pack",
+      "quintile": 3,
+      "human": 19.12568306010929,
+      "survey": 18.0,
+      "twin": 17.096018735363
+    },
+    {
+      "product": "Duracell Coppertop AA Battery, Long Lasting Double A Batteries, 16 Pack",
+      "quintile": 4,
+      "human": 11.466666666666667,
+      "survey": 11.11111111111111,
+      "twin": 12.038095238095238
+    },
+    {
+      "product": "Eggland's Best Classic Extra Large White Eggs, 12 count",
+      "quintile": 0,
+      "human": 93.58752166377816,
+      "survey": 97.82608695652173,
+      "twin": 90.02228274325327
+    },
+    {
+      "product": "Eggland's Best Classic Extra Large White Eggs, 12 count",
+      "quintile": 1,
+      "human": 92.16216216216216,
+      "survey": 96.0,
+      "twin": 97.95366795366796
+    },
+    {
+      "product": "Eggland's Best Classic Extra Large White Eggs, 12 count",
+      "quintile": 2,
+      "human": 88.64864864864866,
+      "survey": 88.88888888888889,
+      "twin": 96.06177606177607
+    },
+    {
+      "product": "Eggland's Best Classic Extra Large White Eggs, 12 count",
+      "quintile": 3,
+      "human": 79.48717948717949,
+      "survey": 78.94736842105263,
+      "twin": 88.97435897435898
+    },
+    {
+      "product": "Eggland's Best Classic Extra Large White Eggs, 12 count",
+      "quintile": 4,
+      "human": 60.634328358208954,
+      "survey": 56.75675675675676,
+      "twin": 56.02345415778252
+    },
+    {
+      "product": "Equate Value Size Honey Lemon Cough Drops with Menthol, 160 Count",
+      "quintile": 0,
+      "human": 83.30464716006884,
+      "survey": 82.95454545454545,
+      "twin": 93.38578805015982
+    },
+    {
+      "product": "Equate Value Size Honey Lemon Cough Drops with Menthol, 160 Count",
+      "quintile": 1,
+      "human": 65.44502617801047,
+      "survey": 68.42105263157895,
+      "twin": 94.9887808526552
+    },
+    {
+      "product": "Equate Value Size Honey Lemon Cough Drops with Menthol, 160 Count",
+      "quintile": 2,
+      "human": 57.59162303664922,
+      "survey": 58.06451612903226,
+      "twin": 92.22139117427075
+    },
+    {
+      "product": "Equate Value Size Honey Lemon Cough Drops with Menthol, 160 Count",
+      "quintile": 3,
+      "human": 41.74757281553398,
+      "survey": 30.303030303030305,
+      "twin": 76.22746185852982
+    },
+    {
+      "product": "Equate Value Size Honey Lemon Cough Drops with Menthol, 160 Count",
+      "quintile": 4,
+      "human": 25.96401028277635,
+      "survey": 41.37931034482759,
+      "twin": 53.91112743297833
+    },
+    {
+      "product": "Folgers Classic Roast Ground Coffee, Medium Roast, 40.3-Ounce Canister",
+      "quintile": 0,
+      "human": 75.06849315068493,
+      "survey": 70.83333333333334,
+      "twin": 80.82191780821917
+    },
+    {
+      "product": "Folgers Classic Roast Ground Coffee, Medium Roast, 40.3-Ounce Canister",
+      "quintile": 1,
+      "human": 51.80412371134021,
+      "survey": 53.03030303030303,
+      "twin": 84.79381443298969
+    },
+    {
+      "product": "Folgers Classic Roast Ground Coffee, Medium Roast, 40.3-Ounce Canister",
+      "quintile": 2,
+      "human": 30.241187384044526,
+      "survey": 31.32530120481928,
+      "twin": 50.993904055128546
+    },
+    {
+      "product": "Folgers Classic Roast Ground Coffee, Medium Roast, 40.3-Ounce Canister",
+      "quintile": 3,
+      "human": 16.260162601626014,
+      "survey": 21.73913043478261,
+      "twin": 24.19667053813395
+    },
+    {
+      "product": "Folgers Classic Roast Ground Coffee, Medium Roast, 40.3-Ounce Canister",
+      "quintile": 4,
+      "human": 10.075566750629724,
+      "survey": 8.771929824561402,
+      "twin": 12.594458438287152
+    },
+    {
+      "product": "Fresh Raspberries, 12 oz Container",
+      "quintile": 0,
+      "human": 93.33333333333333,
+      "survey": 93.10344827586206,
+      "twin": 88.92857142857143
+    },
+    {
+      "product": "Fresh Raspberries, 12 oz Container",
+      "quintile": 1,
+      "human": 86.23376623376623,
+      "survey": 93.44262295081968,
+      "twin": 92.0964749536178
+    },
+    {
+      "product": "Fresh Raspberries, 12 oz Container",
+      "quintile": 2,
+      "human": 56.41025641025641,
+      "survey": 58.57142857142858,
+      "twin": 57.82312925170068
+    },
+    {
+      "product": "Fresh Raspberries, 12 oz Container",
+      "quintile": 3,
+      "human": 31.29973474801061,
+      "survey": 48.214285714285715,
+      "twin": 17.50663129973475
+    },
+    {
+      "product": "Fresh Raspberries, 12 oz Container",
+      "quintile": 4,
+      "human": 16.153846153846153,
+      "survey": 12.727272727272727,
+      "twin": 10.256410256410254
+    },
+    {
+      "product": "Goya Cooked Ham 16 oz",
+      "quintile": 0,
+      "human": 50.13927576601671,
+      "survey": 61.76470588235294,
+      "twin": 44.44886589733386
+    },
+    {
+      "product": "Goya Cooked Ham 16 oz",
+      "quintile": 1,
+      "human": 9.523809523809524,
+      "survey": 6.557377049180328,
+      "twin": 5.8201058201058204
+    },
+    {
+      "product": "Goya Cooked Ham 16 oz",
+      "quintile": 2,
+      "human": 5.354058721934369,
+      "survey": 3.8461538461538463,
+      "twin": 2.615346656797434
+    },
+    {
+      "product": "Goya Cooked Ham 16 oz",
+      "quintile": 3,
+      "human": 3.9893617021276597,
+      "survey": 2.9850746268656714,
+      "twin": 1.4817629179331306
+    },
+    {
+      "product": "Goya Cooked Ham 16 oz",
+      "quintile": 4,
+      "human": 3.0054644808743167,
+      "survey": 3.3333333333333335,
+      "twin": 1.600312256049961
+    },
+    {
+      "product": "Great Value All Natural Chicken Wing Sections, 4 lb (Frozen)",
+      "quintile": 0,
+      "human": 72.20630372492836,
+      "survey": 64.70588235294117,
+      "twin": 78.79656160458453
+    },
+    {
+      "product": "Great Value All Natural Chicken Wing Sections, 4 lb (Frozen)",
+      "quintile": 1,
+      "human": 64.07506702412869,
+      "survey": 71.9298245614035,
+      "twin": 83.95250861738796
+    },
+    {
+      "product": "Great Value All Natural Chicken Wing Sections, 4 lb (Frozen)",
+      "quintile": 2,
+      "human": 39.89637305699482,
+      "survey": 41.86046511627907,
+      "twin": 51.29533678756476
+    },
+    {
+      "product": "Great Value All Natural Chicken Wing Sections, 4 lb (Frozen)",
+      "quintile": 3,
+      "human": 23.513513513513516,
+      "survey": 23.91304347826087,
+      "twin": 29.343629343629345
+    },
+    {
+      "product": "Great Value All Natural Chicken Wing Sections, 4 lb (Frozen)",
+      "quintile": 4,
+      "human": 14.470284237726098,
+      "survey": 15.0,
+      "twin": 16.57438169066076
+    },
+    {
+      "product": "Great Value Milk Whole Vitamin D Gallon",
+      "quintile": 0,
+      "human": 83.68983957219251,
+      "survey": 88.0,
+      "twin": 82.16195569136745
+    },
+    {
+      "product": "Great Value Milk Whole Vitamin D Gallon",
+      "quintile": 1,
+      "human": 78.2016348773842,
+      "survey": 78.94736842105263,
+      "twin": 98.63760217983652
+    },
+    {
+      "product": "Great Value Milk Whole Vitamin D Gallon",
+      "quintile": 2,
+      "human": 58.62708719851577,
+      "survey": 61.79775280898876,
+      "twin": 95.891863238802
+    },
+    {
+      "product": "Great Value Milk Whole Vitamin D Gallon",
+      "quintile": 3,
+      "human": 29.05759162303665,
+      "survey": 26.785714285714285,
+      "twin": 71.76514584891548
+    },
+    {
+      "product": "Great Value Milk Whole Vitamin D Gallon",
+      "quintile": 4,
+      "human": 14.898989898989898,
+      "survey": 12.5,
+      "twin": 40.62049062049062
+    },
+    {
+      "product": "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+      "quintile": 0,
+      "human": 70.05813953488372,
+      "survey": 65.38461538461539,
+      "twin": 77.82392026578073
+    },
+    {
+      "product": "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+      "quintile": 1,
+      "human": 42.8099173553719,
+      "survey": 38.82352941176471,
+      "twin": 60.566706021251484
+    },
+    {
+      "product": "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+      "quintile": 2,
+      "human": 30.851063829787233,
+      "survey": 40.909090909090914,
+      "twin": 40.5015197568389
+    },
+    {
+      "product": "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+      "quintile": 3,
+      "human": 16.24548736462094,
+      "survey": 18.6046511627907,
+      "twin": 22.795255286230013
+    },
+    {
+      "product": "HARIBO Goldbears Original Gummy Bears, 28.8oz Stand Up Bag",
+      "quintile": 4,
+      "human": 14.441416893732969,
+      "survey": 10.909090909090908,
+      "twin": 14.869599065784353
+    },
+    {
+      "product": "Haagen Dazs Coffee Ice Cream, Gluten Free, Kosher, 14.0 oz",
+      "quintile": 0,
+      "human": 78.87323943661971,
+      "survey": 80.48780487804879,
+      "twin": 68.00804828973843
+    },
+    {
+      "product": "Haagen Dazs Coffee Ice Cream, Gluten Free, Kosher, 14.0 oz",
+      "quintile": 1,
+      "human": 56.42317380352645,
+      "survey": 45.45454545454545,
+      "twin": 62.54048218783735
+    },
+    {
+      "product": "Haagen Dazs Coffee Ice Cream, Gluten Free, Kosher, 14.0 oz",
+      "quintile": 2,
+      "human": 48.170731707317074,
+      "survey": 56.25,
+      "twin": 46.51567944250871
+    },
+    {
+      "product": "Haagen Dazs Coffee Ice Cream, Gluten Free, Kosher, 14.0 oz",
+      "quintile": 3,
+      "human": 35.714285714285715,
+      "survey": 44.44444444444444,
+      "twin": 33.257747543461825
+    },
+    {
+      "product": "Haagen Dazs Coffee Ice Cream, Gluten Free, Kosher, 14.0 oz",
+      "quintile": 4,
+      "human": 26.497277676950997,
+      "survey": 31.70731707317073,
+      "twin": 17.68213637542131
+    },
+    {
+      "product": "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+      "quintile": 0,
+      "human": 81.0880829015544,
+      "survey": 86.79245283018868,
+      "twin": 81.79126572908956
+    },
+    {
+      "product": "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+      "quintile": 1,
+      "human": 53.36700336700336,
+      "survey": 53.46534653465347,
+      "twin": 52.26070226070226
+    },
+    {
+      "product": "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+      "quintile": 2,
+      "human": 26.744186046511626,
+      "survey": 18.181818181818183,
+      "twin": 24.584717607973424
+    },
+    {
+      "product": "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+      "quintile": 3,
+      "human": 13.200723327305605,
+      "survey": 20.77922077922078,
+      "twin": 15.009041591320072
+    },
+    {
+      "product": "Hershey's Milk Chocolate Candy, Bars 1.55 oz, 6 Count",
+      "quintile": 4,
+      "human": 12.181303116147308,
+      "survey": 10.638297872340425,
+      "twin": 10.68393363010927
+    },
+    {
+      "product": "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+      "quintile": 0,
+      "human": 57.73955773955773,
+      "survey": 66.66666666666666,
+      "twin": 63.215163215163216
+    },
+    {
+      "product": "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+      "quintile": 1,
+      "human": 21.54696132596685,
+      "survey": 28.57142857142857,
+      "twin": 31.72849250197317
+    },
+    {
+      "product": "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+      "quintile": 2,
+      "human": 16.820702402957487,
+      "survey": 18.75,
+      "twin": 13.783997887509903
+    },
+    {
+      "product": "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+      "quintile": 3,
+      "human": 12.207792207792208,
+      "survey": 11.11111111111111,
+      "twin": 6.975881261595546
+    },
+    {
+      "product": "Horizon Organic Shelf-Stable Whole Milk Boxes, 8 oz., 12 Pack",
+      "quintile": 4,
+      "human": 7.7134986225895315,
+      "survey": 7.936507936507936,
+      "twin": 4.289649744195198
+    },
+    {
+      "product": "John Soules Foods Chicken Breast Fajita Strips, Refrigerated, 16oz, 18g Protein per 3oz Serving Size",
+      "quintile": 0,
+      "human": 77.93296089385476,
+      "survey": 80.76923076923077,
+      "twin": 71.30885873902635
+    },
+    {
+      "product": "John Soules Foods Chicken Breast Fajita Strips, Refrigerated, 16oz, 18g Protein per 3oz Serving Size",
+      "quintile": 1,
+      "human": 66.11721611721612,
+      "survey": 67.90123456790124,
+      "twin": 84.7462061747776
+    },
+    {
+      "product": "John Soules Foods Chicken Breast Fajita Strips, Refrigerated, 16oz, 18g Protein per 3oz Serving Size",
+      "quintile": 2,
+      "human": 50.90909090909091,
+      "survey": 52.0,
+      "twin": 75.67099567099568
+    },
+    {
+      "product": "John Soules Foods Chicken Breast Fajita Strips, Refrigerated, 16oz, 18g Protein per 3oz Serving Size",
+      "quintile": 3,
+      "human": 36.423841059602644,
+      "survey": 41.46341463414634,
+      "twin": 46.026490066225165
+    },
+    {
+      "product": "John Soules Foods Chicken Breast Fajita Strips, Refrigerated, 16oz, 18g Protein per 3oz Serving Size",
+      "quintile": 4,
+      "human": 27.532467532467532,
+      "survey": 28.333333333333332,
+      "twin": 30.87198515769944
+    },
+    {
+      "product": "Kool Aid Jammers Variety Pack with Tropical Punch, Grape & Cherry Kids Drink 0% Juice Box Pouches, 30 Ct Box, 6 fl oz Pouches",
+      "quintile": 0,
+      "human": 58.00524934383202,
+      "survey": 56.36363636363636,
+      "twin": 66.89163854518185
+    },
+    {
+      "product": "Kool Aid Jammers Variety Pack with Tropical Punch, Grape & Cherry Kids Drink 0% Juice Box Pouches, 30 Ct Box, 6 fl oz Pouches",
+      "quintile": 1,
+      "human": 40.0,
+      "survey": 43.63636363636363,
+      "twin": 47.43639921722114
+    },
+    {
+      "product": "Kool Aid Jammers Variety Pack with Tropical Punch, Grape & Cherry Kids Drink 0% Juice Box Pouches, 30 Ct Box, 6 fl oz Pouches",
+      "quintile": 2,
+      "human": 28.055077452667813,
+      "survey": 34.090909090909086,
+      "twin": 28.05507745266782
+    },
+    {
+      "product": "Kool Aid Jammers Variety Pack with Tropical Punch, Grape & Cherry Kids Drink 0% Juice Box Pouches, 30 Ct Box, 6 fl oz Pouches",
+      "quintile": 3,
+      "human": 18.803418803418804,
+      "survey": 20.833333333333336,
+      "twin": 13.186813186813188
+    },
+    {
+      "product": "Kool Aid Jammers Variety Pack with Tropical Punch, Grape & Cherry Kids Drink 0% Juice Box Pouches, 30 Ct Box, 6 fl oz Pouches",
+      "quintile": 4,
+      "human": 10.526315789473683,
+      "survey": 3.7037037037037033,
+      "twin": 9.022556390977444
+    },
+    {
+      "product": "Land O Lakes Salted Stick Butter, 16 oz, 4 Sticks",
+      "quintile": 0,
+      "human": 91.34078212290503,
+      "survey": 86.95652173913044,
+      "twin": 84.11811652035115
+    },
+    {
+      "product": "Land O Lakes Salted Stick Butter, 16 oz, 4 Sticks",
+      "quintile": 1,
+      "human": 78.25342465753424,
+      "survey": 75.86206896551724,
+      "twin": 92.95499021526419
+    },
+    {
+      "product": "Land O Lakes Salted Stick Butter, 16 oz, 4 Sticks",
+      "quintile": 2,
+      "human": 46.596858638743456,
+      "survey": 50.0,
+      "twin": 73.29842931937172
+    },
+    {
+      "product": "Land O Lakes Salted Stick Butter, 16 oz, 4 Sticks",
+      "quintile": 3,
+      "human": 29.72972972972973,
+      "survey": 26.96629213483146,
+      "twin": 43.62934362934363
+    },
+    {
+      "product": "Land O Lakes Salted Stick Butter, 16 oz, 4 Sticks",
+      "quintile": 4,
+      "human": 17.83783783783784,
+      "survey": 21.153846153846153,
+      "twin": 22.972972972972975
+    },
+    {
+      "product": "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+      "quintile": 0,
+      "human": 83.87096774193549,
+      "survey": 87.27272727272727,
+      "twin": 89.05529953917052
+    },
+    {
+      "product": "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+      "quintile": 1,
+      "human": 65.29411764705883,
+      "survey": 56.52173913043478,
+      "twin": 86.51260504201682
+    },
+    {
+      "product": "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+      "quintile": 2,
+      "human": 31.810766721044047,
+      "survey": 28.915662650602407,
+      "twin": 44.95455604754137
+    },
+    {
+      "product": "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+      "quintile": 3,
+      "human": 11.731843575418994,
+      "survey": 13.461538461538462,
+      "twin": 19.632881085395052
+    },
+    {
+      "product": "Lay's Classic Potato Snack Chips, Party Size, 13 oz Bag",
+      "quintile": 4,
+      "human": 9.866666666666667,
+      "survey": 14.0625,
+      "twin": 14.171428571428569
+    },
+    {
+      "product": "Little Debbie Oatmeal Creme Pies, 12 ct, 16.2 oz",
+      "quintile": 0,
+      "human": 68.60068259385666,
+      "survey": 67.90123456790124,
+      "twin": 82.27693807898585
+    },
+    {
+      "product": "Little Debbie Oatmeal Creme Pies, 12 ct, 16.2 oz",
+      "quintile": 1,
+      "human": 58.93333333333334,
+      "survey": 55.10204081632652,
+      "twin": 70.5142857142857
+    },
+    {
+      "product": "Little Debbie Oatmeal Creme Pies, 12 ct, 16.2 oz",
+      "quintile": 2,
+      "human": 52.77777777777778,
+      "survey": 54.285714285714285,
+      "twin": 63.968253968253975
+    },
+    {
+      "product": "Little Debbie Oatmeal Creme Pies, 12 ct, 16.2 oz",
+      "quintile": 3,
+      "human": 42.480211081794195,
+      "survey": 50.0,
+      "twin": 54.88126649076518
+    },
+    {
+      "product": "Little Debbie Oatmeal Creme Pies, 12 ct, 16.2 oz",
+      "quintile": 4,
+      "human": 30.483271375464682,
+      "survey": 32.3943661971831,
+      "twin": 36.69676048858205
+    },
+    {
+      "product": "Little Debbie Zebra Cakes, 13 oz",
+      "quintile": 0,
+      "human": 62.93577981651376,
+      "survey": 56.97674418604651,
+      "twin": 74.25950196592399
+    },
+    {
+      "product": "Little Debbie Zebra Cakes, 13 oz",
+      "quintile": 1,
+      "human": 53.908355795148246,
+      "survey": 64.58333333333334,
+      "twin": 58.76010781671159
+    },
+    {
+      "product": "Little Debbie Zebra Cakes, 13 oz",
+      "quintile": 2,
+      "human": 42.40837696335078,
+      "survey": 50.0,
+      "twin": 52.20643231114434
+    },
+    {
+      "product": "Little Debbie Zebra Cakes, 13 oz",
+      "quintile": 3,
+      "human": 32.53968253968254,
+      "survey": 22.916666666666664,
+      "twin": 40.09826152683296
+    },
+    {
+      "product": "Little Debbie Zebra Cakes, 13 oz",
+      "quintile": 4,
+      "human": 21.81500872600349,
+      "survey": 17.77777777777778,
+      "twin": 22.76240339067564
+    },
+    {
+      "product": "Maruchan Ramen Noodle Chicken Flavor Soup, 3 Oz, 12 Count Shelf Stable Package",
+      "quintile": 0,
+      "human": 74.57212713936431,
+      "survey": 71.9298245614035,
+      "twin": 79.46210268948654
+    },
+    {
+      "product": "Maruchan Ramen Noodle Chicken Flavor Soup, 3 Oz, 12 Count Shelf Stable Package",
+      "quintile": 1,
+      "human": 46.198830409356724,
+      "survey": 47.82608695652174,
+      "twin": 58.02005012531328
+    },
+    {
+      "product": "Maruchan Ramen Noodle Chicken Flavor Soup, 3 Oz, 12 Count Shelf Stable Package",
+      "quintile": 2,
+      "human": 23.905723905723907,
+      "survey": 28.40909090909091,
+      "twin": 19.913419913419915
+    },
+    {
+      "product": "Maruchan Ramen Noodle Chicken Flavor Soup, 3 Oz, 12 Count Shelf Stable Package",
+      "quintile": 3,
+      "human": 13.29639889196676,
+      "survey": 12.5,
+      "twin": 9.220419469726949
+    },
+    {
+      "product": "Maruchan Ramen Noodle Chicken Flavor Soup, 3 Oz, 12 Count Shelf Stable Package",
+      "quintile": 4,
+      "human": 8.522727272727272,
+      "survey": 8.19672131147541,
+      "twin": 6.209415584415585
+    },
+    {
+      "product": "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+      "quintile": 0,
+      "human": 79.68337730870712,
+      "survey": 83.72093023255815,
+      "twin": 81.60572936298529
+    },
+    {
+      "product": "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+      "quintile": 1,
+      "human": 38.84514435695538,
+      "survey": 35.483870967741936,
+      "twin": 44.2819647544057
+    },
+    {
+      "product": "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+      "quintile": 2,
+      "human": 15.0,
+      "survey": 20.0,
+      "twin": 15.566502463054189
+    },
+    {
+      "product": "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+      "quintile": 3,
+      "human": 9.831460674157304,
+      "survey": 5.263157894736842,
+      "twin": 6.82182985553772
+    },
+    {
+      "product": "OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)",
+      "quintile": 4,
+      "human": 8.011049723756907,
+      "survey": 7.547169811320755,
+      "twin": 5.248618784530387
+    },
+    {
+      "product": "Oscar Mayer Chopped Ham & Water product Deli Lunch Meat, 16 Oz Package",
+      "quintile": 0,
+      "human": 60.98418277680141,
+      "survey": 57.534246575342465,
+      "twin": 69.21918152146624
+    },
+    {
+      "product": "Oscar Mayer Chopped Ham & Water product Deli Lunch Meat, 16 Oz Package",
+      "quintile": 1,
+      "human": 50.12722646310432,
+      "survey": 51.85185185185185,
+      "twin": 64.44929116684843
+    },
+    {
+      "product": "Oscar Mayer Chopped Ham & Water product Deli Lunch Meat, 16 Oz Package",
+      "quintile": 2,
+      "human": 38.421052631578945,
+      "survey": 47.82608695652174,
+      "twin": 47.29323308270677
+    },
+    {
+      "product": "Oscar Mayer Chopped Ham & Water product Deli Lunch Meat, 16 Oz Package",
+      "quintile": 3,
+      "human": 25.69832402234637,
+      "survey": 25.609756097560975,
+      "twin": 30.14099494546422
+    },
+    {
+      "product": "Oscar Mayer Chopped Ham & Water product Deli Lunch Meat, 16 Oz Package",
+      "quintile": 4,
+      "human": 16.802168021680217,
+      "survey": 17.647058823529413,
+      "twin": 15.021293070073558
+    },
+    {
+      "product": "Oscar Mayer Classic Uncured Beef Franks Hot Dogs, 10 ct Pack",
+      "quintile": 0,
+      "human": 73.36814621409921,
+      "survey": 68.0,
+      "twin": 79.78366281238344
+    },
+    {
+      "product": "Oscar Mayer Classic Uncured Beef Franks Hot Dogs, 10 ct Pack",
+      "quintile": 1,
+      "human": 66.49350649350649,
+      "survey": 65.57377049180327,
+      "twin": 77.81076066790352
+    },
+    {
+      "product": "Oscar Mayer Classic Uncured Beef Franks Hot Dogs, 10 ct Pack",
+      "quintile": 2,
+      "human": 52.09471766848816,
+      "survey": 48.717948717948715,
+      "twin": 59.094457455113194
+    },
+    {
+      "product": "Oscar Mayer Classic Uncured Beef Franks Hot Dogs, 10 ct Pack",
+      "quintile": 3,
+      "human": 30.36649214659686,
+      "survey": 35.9375,
+      "twin": 32.90949887808527
+    },
+    {
+      "product": "Oscar Mayer Classic Uncured Beef Franks Hot Dogs, 10 ct Pack",
+      "quintile": 4,
+      "human": 21.16991643454039,
+      "survey": 31.914893617021278,
+      "twin": 16.036609629924392
+    },
+    {
+      "product": "Oscar Mayer Fully Cooked Original Bacon, 2.52 oz Box",
+      "quintile": 0,
+      "human": 73.74301675977654,
+      "survey": 69.0909090909091,
+      "twin": 76.81564245810056
+    },
+    {
+      "product": "Oscar Mayer Fully Cooked Original Bacon, 2.52 oz Box",
+      "quintile": 1,
+      "human": 58.98123324396782,
+      "survey": 60.37735849056604,
+      "twin": 55.84067407123707
+    },
+    {
+      "product": "Oscar Mayer Fully Cooked Original Bacon, 2.52 oz Box",
+      "quintile": 2,
+      "human": 44.04332129963899,
+      "survey": 41.17647058823529,
+      "twin": 26.35379061371841
+    },
+    {
+      "product": "Oscar Mayer Fully Cooked Original Bacon, 2.52 oz Box",
+      "quintile": 3,
+      "human": 27.202072538860104,
+      "survey": 34.375,
+      "twin": 11.250925240562548
+    },
+    {
+      "product": "Oscar Mayer Fully Cooked Original Bacon, 2.52 oz Box",
+      "quintile": 4,
+      "human": 19.896640826873384,
+      "survey": 13.333333333333334,
+      "twin": 6.718346253229974
+    },
+    {
+      "product": "Pop-Ice Assorted Fruit Freezer Ice Pops, Gluten-Free Snack, 1.5 oz, 80 Count Fruit Pops",
+      "quintile": 0,
+      "human": 77.02702702702703,
+      "survey": 83.05084745762711,
+      "twin": 81.85328185328184
+    },
+    {
+      "product": "Pop-Ice Assorted Fruit Freezer Ice Pops, Gluten-Free Snack, 1.5 oz, 80 Count Fruit Pops",
+      "quintile": 1,
+      "human": 56.26740947075209,
+      "survey": 52.83018867924528,
+      "twin": 68.24512534818942
+    },
+    {
+      "product": "Pop-Ice Assorted Fruit Freezer Ice Pops, Gluten-Free Snack, 1.5 oz, 80 Count Fruit Pops",
+      "quintile": 2,
+      "human": 36.510791366906474,
+      "survey": 32.91139240506329,
+      "twin": 45.88900308324769
+    },
+    {
+      "product": "Pop-Ice Assorted Fruit Freezer Ice Pops, Gluten-Free Snack, 1.5 oz, 80 Count Fruit Pops",
+      "quintile": 3,
+      "human": 27.70448548812665,
+      "survey": 28.07017543859649,
+      "twin": 24.575951752732756
+    },
+    {
+      "product": "Pop-Ice Assorted Fruit Freezer Ice Pops, Gluten-Free Snack, 1.5 oz, 80 Count Fruit Pops",
+      "quintile": 4,
+      "human": 23.85786802030457,
+      "survey": 34.61538461538461,
+      "twin": 17.331399564902103
+    },
+    {
+      "product": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+      "quintile": 0,
+      "human": 92.53333333333333,
+      "survey": 96.22641509433963,
+      "twin": 82.78095238095237
+    },
+    {
+      "product": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+      "quintile": 1,
+      "human": 78.93333333333334,
+      "survey": 78.43137254901961,
+      "twin": 95.6952380952381
+    },
+    {
+      "product": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+      "quintile": 2,
+      "human": 64.60481099656357,
+      "survey": 66.66666666666666,
+      "twin": 79.28325969563083
+    },
+    {
+      "product": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+      "quintile": 3,
+      "human": 48.42406876790831,
+      "survey": 42.0,
+      "twin": 54.56406058125255
+    },
+    {
+      "product": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+      "quintile": 4,
+      "human": 35.54376657824933,
+      "survey": 38.23529411764706,
+      "twin": 33.99014778325123
+    },
+    {
+      "product": "Purina Dog Chow Complete, Dry Dog Food for Adult Dogs High Protein, Real Chicken, 44 lb Bag",
+      "quintile": 0,
+      "human": 63.212435233160626,
+      "survey": 71.15384615384616,
+      "twin": 46.4100666173205
+    },
+    {
+      "product": "Purina Dog Chow Complete, Dry Dog Food for Adult Dogs High Protein, Real Chicken, 44 lb Bag",
+      "quintile": 1,
+      "human": 45.108695652173914,
+      "survey": 39.285714285714285,
+      "twin": 53.765527950310556
+    },
+    {
+      "product": "Purina Dog Chow Complete, Dry Dog Food for Adult Dogs High Protein, Real Chicken, 44 lb Bag",
+      "quintile": 2,
+      "human": 31.107205623901578,
+      "survey": 26.25,
+      "twin": 38.111975897564655
+    },
+    {
+      "product": "Purina Dog Chow Complete, Dry Dog Food for Adult Dogs High Protein, Real Chicken, 44 lb Bag",
+      "quintile": 3,
+      "human": 19.241192411924118,
+      "survey": 18.333333333333332,
+      "twin": 23.422377080913666
+    },
+    {
+      "product": "Purina Dog Chow Complete, Dry Dog Food for Adult Dogs High Protein, Real Chicken, 44 lb Bag",
+      "quintile": 4,
+      "human": 16.666666666666664,
+      "survey": 13.461538461538462,
+      "twin": 19.55503512880562
+    },
+    {
+      "product": "Purina Fancy Feast Chicken Feast Classic Grain Free Wet Cat Food Pate - 3 oz. Can",
+      "quintile": 0,
+      "human": 57.47330960854092,
+      "survey": 53.333333333333336,
+      "twin": 59.22724961870869
+    },
+    {
+      "product": "Purina Fancy Feast Chicken Feast Classic Grain Free Wet Cat Food Pate - 3 oz. Can",
+      "quintile": 1,
+      "human": 51.49863760217984,
+      "survey": 52.72727272727272,
+      "twin": 55.50797975866096
+    },
+    {
+      "product": "Purina Fancy Feast Chicken Feast Classic Grain Free Wet Cat Food Pate - 3 oz. Can",
+      "quintile": 2,
+      "human": 46.74556213017752,
+      "survey": 60.86956521739131,
+      "twin": 54.184277261200336
+    },
+    {
+      "product": "Purina Fancy Feast Chicken Feast Classic Grain Free Wet Cat Food Pate - 3 oz. Can",
+      "quintile": 3,
+      "human": 33.60215053763441,
+      "survey": 41.07142857142857,
+      "twin": 42.97235023041475
+    },
+    {
+      "product": "Purina Fancy Feast Chicken Feast Classic Grain Free Wet Cat Food Pate - 3 oz. Can",
+      "quintile": 4,
+      "human": 32.99319727891156,
+      "survey": 30.76923076923077,
+      "twin": 37.90087463556851
+    },
+    {
+      "product": "Smart Ones Three Cheese Ziti Marinara Frozen Meal, 9 Oz Box",
+      "quintile": 0,
+      "human": 76.28318584070797,
+      "survey": 81.81818181818183,
+      "twin": 79.01390644753477
+    },
+    {
+      "product": "Smart Ones Three Cheese Ziti Marinara Frozen Meal, 9 Oz Box",
+      "quintile": 1,
+      "human": 64.58333333333334,
+      "survey": 59.25925925925925,
+      "twin": 82.96130952380952
+    },
+    {
+      "product": "Smart Ones Three Cheese Ziti Marinara Frozen Meal, 9 Oz Box",
+      "quintile": 2,
+      "human": 58.04066543438078,
+      "survey": 54.929577464788736,
+      "twin": 72.69606548719302
+    },
+    {
+      "product": "Smart Ones Three Cheese Ziti Marinara Frozen Meal, 9 Oz Box",
+      "quintile": 3,
+      "human": 54.08163265306123,
+      "survey": 59.375,
+      "twin": 56.778425655976676
+    },
+    {
+      "product": "Smart Ones Three Cheese Ziti Marinara Frozen Meal, 9 Oz Box",
+      "quintile": 4,
+      "human": 41.312056737588655,
+      "survey": 36.58536585365854,
+      "twin": 41.26139817629179
+    },
+    {
+      "product": "Stella Artois Lager, 12 Pack, 11.2 fl oz Glass Bottles, 5% ABV, Domestic Beer",
+      "quintile": 0,
+      "human": 60.05509641873278,
+      "survey": 56.14035087719298,
+      "twin": 44.58874458874459
+    },
+    {
+      "product": "Stella Artois Lager, 12 Pack, 11.2 fl oz Glass Bottles, 5% ABV, Domestic Beer",
+      "quintile": 1,
+      "human": 42.28723404255319,
+      "survey": 38.88888888888889,
+      "twin": 30.01519756838906
+    },
+    {
+      "product": "Stella Artois Lager, 12 Pack, 11.2 fl oz Glass Bottles, 5% ABV, Domestic Beer",
+      "quintile": 2,
+      "human": 22.871452420701168,
+      "survey": 25.925925925925924,
+      "twin": 17.195325542570952
+    },
+    {
+      "product": "Stella Artois Lager, 12 Pack, 11.2 fl oz Glass Bottles, 5% ABV, Domestic Beer",
+      "quintile": 3,
+      "human": 10.817941952506596,
+      "survey": 17.543859649122805,
+      "twin": 7.953260459856767
+    },
+    {
+      "product": "Stella Artois Lager, 12 Pack, 11.2 fl oz Glass Bottles, 5% ABV, Domestic Beer",
+      "quintile": 4,
+      "human": 4.9853372434017595,
+      "survey": 3.9215686274509802,
+      "twin": 4.524507750314203
+    },
+    {
+      "product": "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+      "quintile": 0,
+      "human": 88.09523809523809,
+      "survey": 89.36170212765957,
+      "twin": 89.26681783824642
+    },
+    {
+      "product": "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+      "quintile": 1,
+      "human": 67.70833333333334,
+      "survey": 76.27118644067797,
+      "twin": 95.57291666666666
+    },
+    {
+      "product": "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+      "quintile": 2,
+      "human": 48.25046040515654,
+      "survey": 51.89873417721519,
+      "twin": 81.08392528282032
+    },
+    {
+      "product": "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+      "quintile": 3,
+      "human": 25.935828877005346,
+      "survey": 26.31578947368421,
+      "twin": 59.090909090909086
+    },
+    {
+      "product": "Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct",
+      "quintile": 4,
+      "human": 16.62269129287599,
+      "survey": 15.517241379310345,
+      "twin": 36.4493026762156
+    }
+  ]
+}

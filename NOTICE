@@ -1,0 +1,22 @@
+PopSim
+Copyright 2026 PopSim contributors
+
+Original PopSim code is licensed under Apache-2.0 (LICENSE).
+
+The bundled example_pricing.json and aggregate result artifacts derive from Twin-2K-500:
+Olivier Toubia, George Z. Gui, Tianyi Peng, Daniel J. Merlau, Ang Li, and Haozhe Chen,
+"Twin-2K-500: A dataset for building digital twins of over 2,000 people based on their
+answers to over 500 questions" (2025), https://arxiv.org/abs/2505.17479.
+Source: https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500
+Data license: CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/
+PopSim transforms the data into aggregate cells, metrics and calibration results.
+The example contains product-level aggregates, not individual persona records.
+These derived data remain attributed under CC-BY-4.0, separately from the code license.
+
+The converter and scorer are downloaded separately from
+https://github.com/tianyipeng-lab/Digital-Twin-Simulation (Apache-2.0).
+Their source and license are retained in that checkout; PopSim runs them unmodified.
+
+The optional inference path uses autotrust/JEV-9B (Apache-2.0):
+https://huggingface.co/autotrust/JEV-9B
+Model weights are not distributed with PopSim.

@@ -1,0 +1,1448 @@
+{
+  "pricing": {
+    "300 people, 5 units": {
+      "survey average, no twins": {
+        "error": 18.02580515797803,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.4076768741868575,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.972904823728204,
+        "beats": 0.002
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 14.640690268064516,
+        "beats": 0.934
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.753291874944395,
+        "beats": 0.028
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 12.504476620500197,
+        "beats": 0.988
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.04279456444251,
+        "beats": 0.016
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 12.265413656818101,
+        "beats": 0.992
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.366548442269504,
+        "beats": 0.024
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 12.153572441916356,
+        "beats": 0.99
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.472053865835917,
+        "beats": 0.036
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 11.791497936874798,
+        "beats": 0.994
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.701467573579173,
+        "beats": 0.526
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 11.34922540848746,
+        "beats": 0.998
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.655268442164974,
+        "beats": 0.004
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 14.072311821150711,
+        "beats": 0.966
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.458238132904311,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 9.882307626623028,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.8039680509546,
+        "beats": 0.002
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 15.316093882024713,
+        "beats": 0.894
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.708658539448173,
+        "beats": 0.066
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 15.149054589224178,
+        "beats": 0.922
+      }
+    },
+    "300 people, 10 units": {
+      "survey average, no twins": {
+        "error": 17.262649310096563,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.4151222894372513,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.894060896388453,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 13.311244451024832,
+        "beats": 0.994
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.69680765633651,
+        "beats": 0.008
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 11.359365874481002,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.06881746319107,
+        "beats": 0.002
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 11.115723534527907,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.392131968145936,
+        "beats": 0.004
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 10.938179243752154,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.43944664946629,
+        "beats": 0.006
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 10.840471716571829,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.689600704037726,
+        "beats": 0.412
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 10.250732099614398,
+        "beats": 1.0
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.692266824686644,
+        "beats": 0.0
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 12.94116565175452,
+        "beats": 0.996
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.428659611378372,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 8.865260006041748,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.773279831910635,
+        "beats": 0.0
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 13.854032387814662,
+        "beats": 0.974
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.722170975816177,
+        "beats": 0.012
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 13.67958744152294,
+        "beats": 0.986
+      }
+    },
+    "300 people, 20 units": {
+      "survey average, no twins": {
+        "error": 16.953719590971357,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.4105096711909866,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.9056761413748,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 12.73285348398562,
+        "beats": 0.992
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.640994007248842,
+        "beats": 0.046
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 10.896433531865089,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.053518767364462,
+        "beats": 0.002
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 10.568122160137989,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.37220512389642,
+        "beats": 0.006
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 10.384169587331439,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.433723895413873,
+        "beats": 0.038
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 10.415946907922855,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.70810536388411,
+        "beats": 0.356
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 9.859296155539448,
+        "beats": 1.0
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.524198524787455,
+        "beats": 0.0
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 12.47327000042823,
+        "beats": 0.998
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.408986409923703,
+        "beats": 0.978
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 8.410446217477212,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.902177123644798,
+        "beats": 0.0
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 13.285720366002915,
+        "beats": 0.98
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.76855802712133,
+        "beats": 0.034
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 13.12533254657814,
+        "beats": 0.974
+      }
+    },
+    "2058 people, 5 units": {
+      "survey average, no twins": {
+        "error": 17.96595852680723,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.411316659256129,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.98405763259388,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 14.41578469169539,
+        "beats": 0.944
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.738305131704546,
+        "beats": 0.024
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 12.201385245026962,
+        "beats": 0.984
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.056444073356435,
+        "beats": 0.008
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 11.73656998410212,
+        "beats": 0.99
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.3846239142913,
+        "beats": 0.014
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 11.582313706372567,
+        "beats": 0.988
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.448282279526406,
+        "beats": 0.036
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 11.443382524940185,
+        "beats": 0.994
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.724022079676747,
+        "beats": 0.502
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 10.797048689510477,
+        "beats": 1.0
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.61710327638927,
+        "beats": 0.004
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 13.913275103139345,
+        "beats": 0.97
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.427186686982212,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 9.252797780738662,
+        "beats": 0.998
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.811672068211767,
+        "beats": 0.0
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 14.78206697585099,
+        "beats": 0.944
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.73948490564176,
+        "beats": 0.058
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 14.710305830079305,
+        "beats": 0.944
+      }
+    },
+    "2058 people, 10 units": {
+      "survey average, no twins": {
+        "error": 17.130999093541135,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.401506407092379,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.971532302236326,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 13.19603513272584,
+        "beats": 0.986
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.73016608425467,
+        "beats": 0.004
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 11.22405483942787,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.03168950886228,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 10.846890804229758,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.352140102193793,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 10.667056314508718,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.434641194008858,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 10.64600643098099,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.733539714561655,
+        "beats": 0.376
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 10.082272610369929,
+        "beats": 1.0
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.614509545347445,
+        "beats": 0.0
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 12.801905154771953,
+        "beats": 0.992
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.384042734913452,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 8.57447693307299,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.751570542399588,
+        "beats": 0.0
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 13.750546566464502,
+        "beats": 0.976
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.73361089803342,
+        "beats": 0.002
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 13.587954299252255,
+        "beats": 0.982
+      }
+    },
+    "2058 people, 20 units": {
+      "survey average, no twins": {
+        "error": 16.5087648300844,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 2.4013726562666324,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 30.97166536617763,
+        "beats": 0.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 12.524536553886358,
+        "beats": 0.972
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 21.76914757990124,
+        "beats": 0.044
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 10.704221745408521,
+        "beats": 0.992
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 23.082544560930035,
+        "beats": 0.004
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 10.320897461228974,
+        "beats": 0.992
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 22.409295832299403,
+        "beats": 0.008
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 10.13300149916169,
+        "beats": 0.996
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 21.487652922699755,
+        "beats": 0.022
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 10.13236593833106,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 17.7495308045101,
+        "beats": 0.306
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 9.622520943107602,
+        "beats": 1.0
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 25.641801565866764,
+        "beats": 0.0
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 12.204299207745674,
+        "beats": 0.988
+      },
+      "ensemble of the published twins, raw": {
+        "error": 12.482998231606874,
+        "beats": 0.946
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 8.207384669148254,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 28.808510256692628,
+        "beats": 0.0
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 13.020475733262352,
+        "beats": 0.948
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 20.770783335422784,
+        "beats": 0.028
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 12.881433214265321,
+        "beats": 0.966
+      }
+    }
+  },
+  "polling": {
+    "300 people, 3 units": {
+      "survey average, no twins": {
+        "error": 0.5448738243607056,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.04482787187705737,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.35131252855978706,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.8467733319095193,
+        "beats": 0.364
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.37258256117193045,
+        "beats": 0.996
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.5340450660610883,
+        "beats": 0.672
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.4519062256521056,
+        "beats": 0.77
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.3494645687879179,
+        "beats": 0.924
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.44263686408345176,
+        "beats": 0.85
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.34378856434781563,
+        "beats": 0.928
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.33579919480595194,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.3502131284458879,
+        "beats": 0.948
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.37169126833733845,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.41382067680651285,
+        "beats": 0.9
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7174657663480442,
+        "beats": 0.096
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.3577818730448831,
+        "beats": 0.946
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.36742926921471547,
+        "beats": 0.996
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.38169020232175577,
+        "beats": 0.912
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.5755736410897829,
+        "beats": 0.352
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.5519332161521127,
+        "beats": 0.762
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.3962924039006885,
+        "beats": 0.994
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.4366855402010398,
+        "beats": 0.834
+      }
+    },
+    "300 people, 6 units": {
+      "survey average, no twins": {
+        "error": 0.49106287482771865,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.04498776038937592,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.3481639419283752,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.5803826048223729,
+        "beats": 0.716
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.3645964706678561,
+        "beats": 0.94
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.38601675586071943,
+        "beats": 0.844
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.44559877683231314,
+        "beats": 0.62
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.2452496870353866,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.4364001909449374,
+        "beats": 0.652
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.24524722750727002,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.33292351102530504,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.2488496169577757,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.3657603923359452,
+        "beats": 0.942
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.28780400022975533,
+        "beats": 0.99
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7127431907386421,
+        "beats": 0.032
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.26274864305345774,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.36120616727926563,
+        "beats": 0.938
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.26497542210129493,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.5606994711460274,
+        "beats": 0.316
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.3234933511853549,
+        "beats": 0.952
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.38801924633220936,
+        "beats": 0.834
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.30421296138835524,
+        "beats": 0.97
+      }
+    },
+    "300 people, 9 units": {
+      "survey average, no twins": {
+        "error": 0.47341677029700285,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.044948170107992,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.3483606136781795,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.4852161241171186,
+        "beats": 0.842
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.36061863714619086,
+        "beats": 0.798
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.35417256593260926,
+        "beats": 0.898
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.44190619569517325,
+        "beats": 0.576
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.23087055054409744,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.4325753422706292,
+        "beats": 0.606
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.2309775974329362,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.3303307292958808,
+        "beats": 0.958
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.23466690181244945,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.3639408576265726,
+        "beats": 0.788
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.2690361754509033,
+        "beats": 0.994
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7108643939863739,
+        "beats": 0.038
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.25041400044948486,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.3573208504990332,
+        "beats": 0.804
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.25064556484099354,
+        "beats": 0.998
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.5530406603550847,
+        "beats": 0.38
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.2944330009469478,
+        "beats": 0.98
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.38324000648494166,
+        "beats": 0.708
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.2761709596895239,
+        "beats": 0.986
+      }
+    },
+    "2058 people, 3 units": {
+      "survey average, no twins": {
+        "error": 0.5288311638747624,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.044840931642087856,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.3509273198877338,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.827070559465759,
+        "beats": 0.38
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.3713485597383701,
+        "beats": 0.99
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.49322096873855026,
+        "beats": 0.708
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.4513732136927943,
+        "beats": 0.71
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.310760880477429,
+        "beats": 0.95
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.44218156856226515,
+        "beats": 0.784
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.3080622003754838,
+        "beats": 0.948
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.33601367504296414,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.30901665893276414,
+        "beats": 0.96
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.3714300831886826,
+        "beats": 0.99
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.3709482407478675,
+        "beats": 0.918
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7197947998326945,
+        "beats": 0.064
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.31240904777769524,
+        "beats": 0.968
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.3670286651747662,
+        "beats": 0.99
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.3379026814260671,
+        "beats": 0.936
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.5713080197021979,
+        "beats": 0.332
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.47693981376622285,
+        "beats": 0.796
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.3943852994675035,
+        "beats": 0.98
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.373519115966094,
+        "beats": 0.886
+      }
+    },
+    "2058 people, 6 units": {
+      "survey average, no twins": {
+        "error": 0.48859192090084175,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.044969071854104245,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.3490160038693752,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.580445164498266,
+        "beats": 0.708
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.3659093835614017,
+        "beats": 0.938
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.3786554840922514,
+        "beats": 0.858
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.4425020008809836,
+        "beats": 0.612
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.23312926945872597,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.4331262509351254,
+        "beats": 0.65
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.23255859657631592,
+        "beats": 0.998
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.3299026024429515,
+        "beats": 0.994
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.23615752391014377,
+        "beats": 0.998
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.36614333048883557,
+        "beats": 0.932
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.27358898994620356,
+        "beats": 0.994
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7115995950103609,
+        "beats": 0.036
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.25233546071615565,
+        "beats": 0.998
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.36031319071750934,
+        "beats": 0.932
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.25403297471076175,
+        "beats": 0.998
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.564019363889532,
+        "beats": 0.296
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.3117047294907665,
+        "beats": 0.95
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.3896856620734343,
+        "beats": 0.838
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.2894486982282094,
+        "beats": 0.968
+      }
+    },
+    "2058 people, 9 units": {
+      "survey average, no twins": {
+        "error": 0.46676345622804283,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.04474018046047517,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.34944569567352823,
+        "beats": 0.996
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.4745153109927765,
+        "beats": 0.852
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.36395468229622147,
+        "beats": 0.81
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.3459323596733558,
+        "beats": 0.908
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.4436620801944357,
+        "beats": 0.56
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.22010100517067782,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.43440613343229256,
+        "beats": 0.574
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.22061545156903817,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.3315501196777008,
+        "beats": 0.95
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.22340216660038542,
+        "beats": 1.0
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.3675876724810916,
+        "beats": 0.794
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.25904000207274447,
+        "beats": 0.996
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.7176891888338328,
+        "beats": 0.018
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.2425928871908033,
+        "beats": 1.0
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.3606236317051729,
+        "beats": 0.808
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.2408905397994598,
+        "beats": 1.0
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.5615376153645474,
+        "beats": 0.346
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.2887429441330875,
+        "beats": 0.986
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.38970978559338904,
+        "beats": 0.706
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.2686955793136305,
+        "beats": 0.994
+      }
+    }
+  },
+  "ab": {
+    "300 people, 4 units": {
+      "no effect, no twins": {
+        "error": 0.7241271088868778,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.09412693266859143,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.6912235890480127,
+        "beats": 0.586
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 1.010636274858557,
+        "beats": 0.332
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.794031183802399,
+        "beats": 0.132
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.9629046796619016,
+        "beats": 0.406
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.6342686972772383,
+        "beats": 0.908
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.898158977252763,
+        "beats": 0.758
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.6050729741019627,
+        "beats": 0.958
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.962889204841445,
+        "beats": 0.764
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.6089631832591113,
+        "beats": 0.828
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 1.2223986101581168,
+        "beats": 0.662
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.6820655390870534,
+        "beats": 0.798
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.6135747872035558,
+        "beats": 0.862
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.6237538759932849,
+        "beats": 0.878
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.6470105041523616,
+        "beats": 0.796
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.5491146971452805,
+        "beats": 0.998
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.8730009362570965,
+        "beats": 0.776
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.9970989304377273,
+        "beats": 0.038
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 1.0263023721372269,
+        "beats": 0.322
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.732790219665679,
+        "beats": 0.39
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.9276923319664444,
+        "beats": 0.224
+      }
+    },
+    "300 people, 8 units": {
+      "no effect, no twins": {
+        "error": 0.7148333519293246,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.09273616070341364,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.6715827300684769,
+        "beats": 0.59
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.8127784860407351,
+        "beats": 0.518
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.7820578199154745,
+        "beats": 0.276
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.7625592580734392,
+        "beats": 0.59
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.6249807791214945,
+        "beats": 0.78
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.5989104092582386,
+        "beats": 0.892
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.5944779754475505,
+        "beats": 0.826
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.5886563188575056,
+        "beats": 0.918
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.5972223734662284,
+        "beats": 0.74
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.5866616834541496,
+        "beats": 0.81
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.6729683425872026,
+        "beats": 0.634
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.48597163460012544,
+        "beats": 0.986
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.6086063742791489,
+        "beats": 0.762
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.558279917554783,
+        "beats": 0.88
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.5378284731618462,
+        "beats": 0.95
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.54095873512143,
+        "beats": 0.956
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.9656111281387862,
+        "beats": 0.164
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.8384205704193067,
+        "beats": 0.434
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.7125061012982034,
+        "beats": 0.444
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.8038436841813053,
+        "beats": 0.438
+      }
+    },
+    "2058 people, 4 units": {
+      "no effect, no twins": {
+        "error": 0.7199921632295524,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.09420898179034164,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.6849138228608254,
+        "beats": 0.576
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 1.0098306641305086,
+        "beats": 0.326
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.7869819883181669,
+        "beats": 0.136
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.9631621055661261,
+        "beats": 0.396
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.6317944577221639,
+        "beats": 0.896
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.8777711949377199,
+        "beats": 0.764
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.6020883786083193,
+        "beats": 0.964
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.9241672966857581,
+        "beats": 0.776
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.6090375234865316,
+        "beats": 0.822
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 1.069735127004926,
+        "beats": 0.644
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.683761205131599,
+        "beats": 0.774
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.5951811023449766,
+        "beats": 0.854
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.6206065927527639,
+        "beats": 0.882
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.6717436451304336,
+        "beats": 0.77
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.5459125098502148,
+        "beats": 0.996
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.829774219889069,
+        "beats": 0.792
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 1.0009757635097138,
+        "beats": 0.032
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 1.0099425274212612,
+        "beats": 0.32
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.7234935225544796,
+        "beats": 0.436
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.9523022088690722,
+        "beats": 0.224
+      }
+    },
+    "2058 people, 8 units": {
+      "no effect, no twins": {
+        "error": 0.7104334862816865,
+        "beats": 0.0
+      },
+      "humans, retest, raw": {
+        "error": 0.09316861597381236,
+        "beats": 1.0
+      },
+      "GPT-4.1-mini, demographics, raw": {
+        "error": 0.6714570815526651,
+        "beats": 0.538
+      },
+      "GPT-4.1-mini, demographics, calibrated": {
+        "error": 0.8132193621922498,
+        "beats": 0.512
+      },
+      "GPT-4.1-mini, summary, raw": {
+        "error": 0.7781013135098352,
+        "beats": 0.28
+      },
+      "GPT-4.1-mini, summary, calibrated": {
+        "error": 0.7521760272725924,
+        "beats": 0.582
+      },
+      "GPT-4.1-mini, full, raw": {
+        "error": 0.6248002536302673,
+        "beats": 0.768
+      },
+      "GPT-4.1-mini, full, calibrated": {
+        "error": 0.6034622769913541,
+        "beats": 0.91
+      },
+      "GPT-4.1-mini, full, temp 1, raw": {
+        "error": 0.5953853027712789,
+        "beats": 0.828
+      },
+      "GPT-4.1-mini, full, temp 1, calibrated": {
+        "error": 0.5910526957890654,
+        "beats": 0.91
+      },
+      "GPT-4.1-mini, full, reasoning, raw": {
+        "error": 0.5985240505516927,
+        "beats": 0.72
+      },
+      "GPT-4.1-mini, full, reasoning, calibrated": {
+        "error": 0.5743623189000923,
+        "beats": 0.792
+      },
+      "GPT-4.1, JSON persona, raw": {
+        "error": 0.6675148046195154,
+        "beats": 0.62
+      },
+      "GPT-4.1, JSON persona, calibrated": {
+        "error": 0.49404923169925014,
+        "beats": 0.97
+      },
+      "Gemini 2.5 Flash, full, raw": {
+        "error": 0.6035048394740958,
+        "beats": 0.726
+      },
+      "Gemini 2.5 Flash, full, calibrated": {
+        "error": 0.559394838810101,
+        "beats": 0.864
+      },
+      "ensemble of the published twins, raw": {
+        "error": 0.5392823909278304,
+        "beats": 0.95
+      },
+      "ensemble of the published twins, calibrated": {
+        "error": 0.552695104154683,
+        "beats": 0.938
+      },
+      "JEV-9B J, summary, raw": {
+        "error": 0.9823567971568019,
+        "beats": 0.138
+      },
+      "JEV-9B J, summary, calibrated": {
+        "error": 0.8238789761668627,
+        "beats": 0.422
+      },
+      "JEV-9B P, summary, raw": {
+        "error": 0.707370427469554,
+        "beats": 0.438
+      },
+      "JEV-9B P, summary, calibrated": {
+        "error": 0.794096429238024,
+        "beats": 0.428
+      }
+    }
+  }
+}

@@ -1,0 +1,943 @@
+{
+  "all": {
+    "humans, wave 4": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.4409863945578231,
+        "demand curve error (pp)": 0.0,
+        "price slope": -0.32250355050994983,
+        "products r(buy rate)": 1.0,
+        "products r(price slope)": 1.0
+      },
+      "ab": {
+        "r(effects)": 1.0,
+        "sign right (clear effects)": 1.0,
+        "effect error (d)": 0.0,
+        "effects": {
+          "disease: loss vs gain frame": 0.761,
+          "base rate: 70 vs 30 engineers": 0.849,
+          "outcome bias: died vs succeeded": -0.495,
+          "less is more: lose 5c vs nothing": 0.742,
+          "less is more: lose 25c vs nothing": 0.652,
+          "proportion dominance 1: B vs A": 0.215,
+          "proportion dominance 1: C vs A": 0.269,
+          "proportion dominance 2: B vs A": 0.223,
+          "proportion dominance 2: C vs A": 0.264,
+          "sunk cost: paid $50 card vs none": -0.621,
+          "drive to save $10: on $250 vs $30": 0.967,
+          "willingness to accept vs pay": 1.689,
+          "pay for partial vs full protection": -0.597,
+          "Allais: form 2 vs form 1": 0.534,
+          "myside: ban German car vs Ford": 0.344,
+          "Linda: feminist bank teller vs teller": 0.786
+        }
+      },
+      "polling": {
+        "topline r": 1.0,
+        "topline error": 0.0,
+        "gaps r": 1.0,
+        "gap ratio": 1.0,
+        "gap sign right (clear gaps)": 1.0,
+        "gap error (SD)": 0.0
+      }
+    },
+    "humans, retest": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.43052721088435375,
+        "demand curve error (pp)": 1.0568918307899438,
+        "price slope": -0.3230267268041103,
+        "products r(buy rate)": 0.9987125363118382,
+        "products r(price slope)": 0.9828449932449363
+      },
+      "ab": {
+        "r(effects)": 0.9906170835712604,
+        "sign right (clear effects)": 1.0,
+        "effect error (d)": 0.07531199010856665,
+        "effects": {
+          "disease: loss vs gain frame": 0.818,
+          "base rate: 70 vs 30 engineers": 0.734,
+          "outcome bias: died vs succeeded": -0.645,
+          "less is more: lose 5c vs nothing": 0.618,
+          "less is more: lose 25c vs nothing": 0.611,
+          "proportion dominance 1: B vs A": 0.227,
+          "proportion dominance 1: C vs A": 0.24,
+          "proportion dominance 2: B vs A": 0.25,
+          "proportion dominance 2: C vs A": 0.257,
+          "sunk cost: paid $50 card vs none": -0.763,
+          "drive to save $10: on $250 vs $30": 0.874,
+          "willingness to accept vs pay": 1.5,
+          "pay for partial vs full protection": -0.614,
+          "Allais: form 2 vs form 1": 0.546,
+          "myside: ban German car vs Ford": 0.271,
+          "Linda: feminist bank teller vs teller": 0.901
+        }
+      },
+      "polling": {
+        "topline r": 0.9983657911932965,
+        "topline error": 0.018644494834970975,
+        "gaps r": 0.9953693636092075,
+        "gap ratio": 0.9914115070513807,
+        "gap sign right (clear gaps)": 1.0,
+        "gap error (SD)": 0.03471953208845072
+      }
+    },
+    "GPT-4.1-mini, demographics": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.7064504373177842,
+        "demand curve error (pp)": 27.3693463360027,
+        "price slope": -0.23245080651413422,
+        "products r(buy rate)": 0.7615262504091351,
+        "products r(price slope)": 0.31549079397553936
+      },
+      "ab": {
+        "r(effects)": 0.4009827681878733,
+        "sign right (clear effects)": 0.875,
+        "effect error (d)": 0.5146840937901331,
+        "effects": {
+          "disease: loss vs gain frame": 1.836,
+          "base rate: 70 vs 30 engineers": 0.244,
+          "outcome bias: died vs succeeded": -0.007,
+          "less is more: lose 5c vs nothing": 0.55,
+          "less is more: lose 25c vs nothing": 0.296,
+          "proportion dominance 1: B vs A": 0.041,
+          "proportion dominance 1: C vs A": 0.043,
+          "proportion dominance 2: B vs A": 0.162,
+          "proportion dominance 2: C vs A": 0.153,
+          "sunk cost: paid $50 card vs none": 0.062,
+          "drive to save $10: on $250 vs $30": 0.521,
+          "willingness to accept vs pay": 0.159,
+          "pay for partial vs full protection": -0.7,
+          "Allais: form 2 vs form 1": -1.028,
+          "myside: ban German car vs Ford": 0.075,
+          "Linda: feminist bank teller vs teller": 1.139
+        }
+      },
+      "polling": {
+        "topline r": 0.7185724494277745,
+        "topline error": 0.3550642479213908,
+        "gaps r": 0.6600277086175314,
+        "gap ratio": 0.6164817141907604,
+        "gap sign right (clear gaps)": 0.8607594936708861,
+        "gap error (SD)": 0.2406547435391513
+      }
+    },
+    "GPT-4.1-mini, summary": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.6178449951409135,
+        "demand curve error (pp)": 17.87623467591902,
+        "price slope": -0.2998180317732634,
+        "products r(buy rate)": 0.8485974512025386,
+        "products r(price slope)": 0.4491209177466594
+      },
+      "ab": {
+        "r(effects)": 0.2852914939224087,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 0.6119666919522977,
+        "effects": {
+          "disease: loss vs gain frame": 2.249,
+          "base rate: 70 vs 30 engineers": 0.387,
+          "outcome bias: died vs succeeded": -0.021,
+          "less is more: lose 5c vs nothing": -0.163,
+          "less is more: lose 25c vs nothing": -0.272,
+          "proportion dominance 1: B vs A": 0.027,
+          "proportion dominance 1: C vs A": -0.005,
+          "proportion dominance 2: B vs A": 0.153,
+          "proportion dominance 2: C vs A": 0.073,
+          "sunk cost: paid $50 card vs none": 0.728,
+          "drive to save $10: on $250 vs $30": 1.205,
+          "willingness to accept vs pay": 0.118,
+          "pay for partial vs full protection": -0.734,
+          "Allais: form 2 vs form 1": -0.447,
+          "myside: ban German car vs Ford": -0.157,
+          "Linda: feminist bank teller vs teller": 0.824
+        }
+      },
+      "polling": {
+        "topline r": 0.7097709363952969,
+        "topline error": 0.31022117841845737,
+        "gaps r": 0.7837145431942667,
+        "gap ratio": 1.0761481622790157,
+        "gap sign right (clear gaps)": 0.8607594936708861,
+        "gap error (SD)": 0.2251163576508826
+      }
+    },
+    "GPT-4.1-mini, full": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.3006681243926142,
+        "demand curve error (pp)": 15.579604175696915,
+        "price slope": -0.23684733032819302,
+        "products r(buy rate)": 0.843206182447268,
+        "products r(price slope)": 0.7222509883476657
+      },
+      "ab": {
+        "r(effects)": 0.48675996117515263,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 0.5187482970451773,
+        "effects": {
+          "disease: loss vs gain frame": 0.822,
+          "base rate: 70 vs 30 engineers": 1.585,
+          "outcome bias: died vs succeeded": 0.001,
+          "less is more: lose 5c vs nothing": -0.136,
+          "less is more: lose 25c vs nothing": -0.058,
+          "proportion dominance 1: B vs A": 0.094,
+          "proportion dominance 1: C vs A": 0.078,
+          "proportion dominance 2: B vs A": -0.015,
+          "proportion dominance 2: C vs A": 0.02,
+          "sunk cost: paid $50 card vs none": 0.704,
+          "drive to save $10: on $250 vs $30": 1.627,
+          "willingness to accept vs pay": 0.553,
+          "pay for partial vs full protection": -0.722,
+          "Allais: form 2 vs form 1": 0.0,
+          "myside: ban German car vs Ford": 0.107,
+          "Linda: feminist bank teller vs teller": 1.394
+        }
+      },
+      "polling": {
+        "topline r": 0.7923327925860122,
+        "topline error": 0.21021847892596193,
+        "gaps r": 0.8992837836100891,
+        "gap ratio": 1.6037615972700074,
+        "gap sign right (clear gaps)": 0.8607594936708861,
+        "gap error (SD)": 0.264146371256456
+      }
+    },
+    "GPT-4.1-mini, full, temp 1": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.2998542274052478,
+        "demand curve error (pp)": 15.786985372786337,
+        "price slope": -0.22733517918018914,
+        "products r(buy rate)": 0.8463993825029091,
+        "products r(price slope)": 0.7447869080624189
+      },
+      "ab": {
+        "r(effects)": 0.5108192136449594,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 0.5064351293796656,
+        "effects": {
+          "disease: loss vs gain frame": 0.924,
+          "base rate: 70 vs 30 engineers": 1.446,
+          "outcome bias: died vs succeeded": 0.002,
+          "less is more: lose 5c vs nothing": -0.071,
+          "less is more: lose 25c vs nothing": -0.071,
+          "proportion dominance 1: B vs A": 0.041,
+          "proportion dominance 1: C vs A": 0.035,
+          "proportion dominance 2: B vs A": -0.038,
+          "proportion dominance 2: C vs A": 0.004,
+          "sunk cost: paid $50 card vs none": 0.678,
+          "drive to save $10: on $250 vs $30": 1.35,
+          "willingness to accept vs pay": 0.581,
+          "pay for partial vs full protection": -0.795,
+          "Allais: form 2 vs form 1": -0.001,
+          "myside: ban German car vs Ford": 0.104,
+          "Linda: feminist bank teller vs teller": 1.404
+        }
+      },
+      "polling": {
+        "topline r": 0.7994982216646166,
+        "topline error": 0.20131465284526512,
+        "gaps r": 0.9003044266357955,
+        "gap ratio": 1.5874397058810892,
+        "gap sign right (clear gaps)": 0.8860759493670886,
+        "gap error (SD)": 0.2597690025429931
+      }
+    },
+    "GPT-4.1-mini, full, reasoning": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.5693756073858115,
+        "demand curve error (pp)": 15.227120377416522,
+        "price slope": -0.32674589933708464,
+        "products r(buy rate)": 0.8562015582126995,
+        "products r(price slope)": 0.6634272280921553
+      },
+      "ab": {
+        "r(effects)": 0.6001298929396558,
+        "sign right (clear effects)": 0.6875,
+        "effect error (d)": 0.5052153664181964,
+        "effects": {
+          "disease: loss vs gain frame": 0.07,
+          "base rate: 70 vs 30 engineers": 1.288,
+          "outcome bias: died vs succeeded": 0.009,
+          "less is more: lose 5c vs nothing": -0.018,
+          "less is more: lose 25c vs nothing": 0.052,
+          "proportion dominance 1: B vs A": -0.002,
+          "proportion dominance 1: C vs A": 0.017,
+          "proportion dominance 2: B vs A": -0.031,
+          "proportion dominance 2: C vs A": 0.004,
+          "sunk cost: paid $50 card vs none": 0.835,
+          "drive to save $10: on $250 vs $30": 1.368,
+          "willingness to accept vs pay": 1.576,
+          "pay for partial vs full protection": -1.02,
+          "Allais: form 2 vs form 1": 0.099,
+          "myside: ban German car vs Ford": 0.185,
+          "Linda: feminist bank teller vs teller": 1.907
+        }
+      },
+      "polling": {
+        "topline r": 0.6601494316641326,
+        "topline error": 0.2242333441313033,
+        "gaps r": 0.8961097151861571,
+        "gap ratio": 1.3384812872678928,
+        "gap sign right (clear gaps)": 0.8354430379746836,
+        "gap error (SD)": 0.2160609820391912
+      }
+    },
+    "GPT-4.1, JSON persona": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.41437074829931975,
+        "demand curve error (pp)": 10.93482612326754,
+        "price slope": -0.4770617640242922,
+        "products r(buy rate)": 0.9024913796681663,
+        "products r(price slope)": 0.6889461514846303
+      },
+      "ab": {
+        "r(effects)": 0.6551058058641392,
+        "sign right (clear effects)": 0.9375,
+        "effect error (d)": 0.5456571117176642,
+        "effects": {
+          "disease: loss vs gain frame": 1.726,
+          "base rate: 70 vs 30 engineers": 1.832,
+          "outcome bias: died vs succeeded": -0.24,
+          "less is more: lose 5c vs nothing": 0.13,
+          "less is more: lose 25c vs nothing": 0.12,
+          "proportion dominance 1: B vs A": 0.14,
+          "proportion dominance 1: C vs A": 0.203,
+          "proportion dominance 2: B vs A": 0.252,
+          "proportion dominance 2: C vs A": 0.376,
+          "sunk cost: paid $50 card vs none": 0.445,
+          "drive to save $10: on $250 vs $30": 1.723,
+          "willingness to accept vs pay": 1.038,
+          "pay for partial vs full protection": -0.984,
+          "Allais: form 2 vs form 1": 0.944,
+          "myside: ban German car vs Ford": 0.04,
+          "Linda: feminist bank teller vs teller": 2.313
+        }
+      },
+      "polling": {
+        "topline r": 0.856826477188745,
+        "topline error": 0.19971745311881364,
+        "gaps r": 0.8707448941271627,
+        "gap ratio": 1.341734460150107,
+        "gap sign right (clear gaps)": 0.8607594936708861,
+        "gap error (SD)": 0.23770113101789983
+      }
+    },
+    "Gemini 2.5 Flash, full": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.6025024295432458,
+        "demand curve error (pp)": 19.336109829498685,
+        "price slope": -0.46796009670342126,
+        "products r(buy rate)": 0.746428256936382,
+        "products r(price slope)": 0.5692893629979788
+      },
+      "ab": {
+        "r(effects)": 0.6195959119990888,
+        "sign right (clear effects)": 0.9375,
+        "effect error (d)": 0.44606090698936984,
+        "effects": {
+          "disease: loss vs gain frame": 2.248,
+          "base rate: 70 vs 30 engineers": 1.06,
+          "outcome bias: died vs succeeded": -0.192,
+          "less is more: lose 5c vs nothing": 0.83,
+          "less is more: lose 25c vs nothing": 0.739,
+          "proportion dominance 1: B vs A": 0.124,
+          "proportion dominance 1: C vs A": 0.107,
+          "proportion dominance 2: B vs A": 0.171,
+          "proportion dominance 2: C vs A": 0.146,
+          "sunk cost: paid $50 card vs none": 0.307,
+          "drive to save $10: on $250 vs $30": 0.645,
+          "willingness to accept vs pay": 0.67,
+          "pay for partial vs full protection": -0.917,
+          "Allais: form 2 vs form 1": 0.917,
+          "myside: ban German car vs Ford": 0.001,
+          "Linda: feminist bank teller vs teller": 2.011
+        }
+      },
+      "polling": {
+        "topline r": 0.7082652491917716,
+        "topline error": 0.21890634560702585,
+        "gaps r": 0.8905142049234318,
+        "gap ratio": 2.096604018973247,
+        "gap sign right (clear gaps)": 0.8860759493670886,
+        "gap error (SD)": 0.4084374632411502
+      }
+    },
+    "JEV-9B J, summary": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.3695092322643343,
+        "demand curve error (pp)": 15.751995307841394,
+        "price slope": -0.1083482468209882,
+        "products r(buy rate)": 0.7071684805724537,
+        "products r(price slope)": 0.4295753522695834
+      },
+      "ab": {
+        "r(effects)": 0.37939212176672993,
+        "sign right (clear effects)": 0.75,
+        "effect error (d)": 0.6898627458263707,
+        "effects": {
+          "disease: loss vs gain frame": -0.127,
+          "base rate: 70 vs 30 engineers": -0.4,
+          "outcome bias: died vs succeeded": -3.068,
+          "less is more: lose 5c vs nothing": 1.001,
+          "less is more: lose 25c vs nothing": 1.133,
+          "proportion dominance 1: B vs A": 0.054,
+          "proportion dominance 1: C vs A": 0.053,
+          "proportion dominance 2: B vs A": 0.259,
+          "proportion dominance 2: C vs A": 0.223,
+          "sunk cost: paid $50 card vs none": 0.425,
+          "drive to save $10: on $250 vs $30": 0.569,
+          "willingness to accept vs pay": -0.487,
+          "pay for partial vs full protection": -0.98,
+          "Allais: form 2 vs form 1": 0.248,
+          "myside: ban German car vs Ford": 0.251,
+          "Linda: feminist bank teller vs teller": 0.033
+        }
+      },
+      "polling": {
+        "topline r": 0.7806245625301652,
+        "topline error": 0.4044919555123636,
+        "gaps r": 0.835186146892031,
+        "gap ratio": 1.6389781432575556,
+        "gap sign right (clear gaps)": 0.8734177215189873,
+        "gap error (SD)": 0.2983213212113799
+      }
+    },
+    "JEV-9B P, summary": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.4491253644314869,
+        "demand curve error (pp)": 16.242790569359205,
+        "price slope": -0.06720745809712159,
+        "products r(buy rate)": 0.7460931854977989,
+        "products r(price slope)": 0.2480982381668876
+      },
+      "ab": {
+        "r(effects)": 0.36765493421006323,
+        "sign right (clear effects)": 0.75,
+        "effect error (d)": 0.5360812116914391,
+        "effects": {
+          "disease: loss vs gain frame": -0.634,
+          "base rate: 70 vs 30 engineers": 0.506,
+          "outcome bias: died vs succeeded": -1.033,
+          "less is more: lose 5c vs nothing": 0.152,
+          "less is more: lose 25c vs nothing": 0.131,
+          "proportion dominance 1: B vs A": 0.017,
+          "proportion dominance 1: C vs A": -0.009,
+          "proportion dominance 2: B vs A": 0.172,
+          "proportion dominance 2: C vs A": 0.08,
+          "sunk cost: paid $50 card vs none": 0.12,
+          "drive to save $10: on $250 vs $30": 0.228,
+          "willingness to accept vs pay": -0.308,
+          "pay for partial vs full protection": -0.663,
+          "Allais: form 2 vs form 1": 0.252,
+          "myside: ban German car vs Ford": 0.137,
+          "Linda: feminist bank teller vs teller": 0.338
+        }
+      },
+      "polling": {
+        "topline r": 0.6202012590204201,
+        "topline error": 0.36043173883309937,
+        "gaps r": 0.855787448593765,
+        "gap ratio": 1.3308182444885486,
+        "gap sign right (clear gaps)": 0.8607594936708861,
+        "gap error (SD)": 0.23035293844436366
+      }
+    },
+    "baseline: no effect / no gap": {
+      "ab": {
+        "effect error (d)": 0.6255198230528254
+      },
+      "polling": {
+        "gap error (SD)": 0.31505539082753814
+      }
+    }
+  },
+  "pilot": {
+    "humans, wave 4": {
+      "participants": 2058,
+      "pricing": {
+        "buy rate": 0.4409863945578231,
+        "demand curve error (pp)": 0.0,
+        "price slope": -0.32250355050994983,
+        "products r(buy rate)": 1.0,
+        "products r(price slope)": 1.0
+      },
+      "ab": {
+        "r(effects)": 1.0,
+        "sign right (clear effects)": 1.0,
+        "effect error (d)": 0.0,
+        "effects": {
+          "disease: loss vs gain frame": 0.761,
+          "base rate: 70 vs 30 engineers": 0.849,
+          "outcome bias: died vs succeeded": -0.495,
+          "less is more: lose 5c vs nothing": 0.742,
+          "less is more: lose 25c vs nothing": 0.652,
+          "proportion dominance 1: B vs A": 0.215,
+          "proportion dominance 1: C vs A": 0.269,
+          "proportion dominance 2: B vs A": 0.223,
+          "proportion dominance 2: C vs A": 0.264,
+          "sunk cost: paid $50 card vs none": -0.621,
+          "drive to save $10: on $250 vs $30": 0.967,
+          "willingness to accept vs pay": 1.689,
+          "pay for partial vs full protection": -0.597,
+          "Allais: form 2 vs form 1": 0.534,
+          "myside: ban German car vs Ford": 0.344,
+          "Linda: feminist bank teller vs teller": 0.786
+        }
+      },
+      "polling": {
+        "topline r": 1.0,
+        "topline error": 0.0,
+        "gaps r": 1.0,
+        "gap ratio": 1.0,
+        "gap sign right (clear gaps)": 1.0,
+        "gap error (SD)": 0.0
+      }
+    },
+    "humans, retest": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.4195,
+        "demand curve error (pp)": 1.7680397132931347,
+        "price slope": -0.33534801642337664,
+        "products r(buy rate)": 0.9793708922881439,
+        "products r(price slope)": 0.8728309642814583
+      },
+      "ab": {
+        "r(effects)": 0.9674697128335693,
+        "sign right (clear effects)": 1.0,
+        "effect error (d)": 0.10251243961935527,
+        "effects": {
+          "disease: loss vs gain frame": 1.011,
+          "base rate: 70 vs 30 engineers": 0.682,
+          "outcome bias: died vs succeeded": -0.843,
+          "less is more: lose 5c vs nothing": 0.547,
+          "less is more: lose 25c vs nothing": 0.651,
+          "proportion dominance 1: B vs A": 0.167,
+          "proportion dominance 1: C vs A": 0.082,
+          "proportion dominance 2: B vs A": 0.032,
+          "proportion dominance 2: C vs A": 0.127,
+          "sunk cost: paid $50 card vs none": -0.396,
+          "drive to save $10: on $250 vs $30": 0.905,
+          "willingness to accept vs pay": 1.319,
+          "pay for partial vs full protection": -0.4,
+          "Allais: form 2 vs form 1": 0.646,
+          "myside: ban German car vs Ford": 0.26,
+          "Linda: feminist bank teller vs teller": 1.011
+        }
+      },
+      "polling": {
+        "topline r": 0.9954061556873576,
+        "topline error": 0.03476851851851852,
+        "gaps r": 0.9613458036546488,
+        "gap ratio": 0.9774874630955199,
+        "gap sign right (clear gaps)": 0.9493670886075949,
+        "gap error (SD)": 0.11319219055248493
+      }
+    },
+    "GPT-4.1-mini, demographics": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.716625,
+        "demand curve error (pp)": 29.303833908585137,
+        "price slope": -0.22288866618121747,
+        "products r(buy rate)": 0.740954044405893,
+        "products r(price slope)": 0.22200788701215998
+      },
+      "ab": {
+        "r(effects)": 0.37586914066146654,
+        "sign right (clear effects)": 0.875,
+        "effect error (d)": 0.49811515906671655,
+        "effects": {
+          "disease: loss vs gain frame": 1.765,
+          "base rate: 70 vs 30 engineers": 0.285,
+          "outcome bias: died vs succeeded": -0.022,
+          "less is more: lose 5c vs nothing": 0.492,
+          "less is more: lose 25c vs nothing": 0.348,
+          "proportion dominance 1: B vs A": 0.061,
+          "proportion dominance 1: C vs A": 0.059,
+          "proportion dominance 2: B vs A": 0.153,
+          "proportion dominance 2: C vs A": 0.06,
+          "sunk cost: paid $50 card vs none": 0.051,
+          "drive to save $10: on $250 vs $30": 0.284,
+          "willingness to accept vs pay": 0.1,
+          "pay for partial vs full protection": -0.638,
+          "Allais: form 2 vs form 1": -1.223,
+          "myside: ban German car vs Ford": 0.084,
+          "Linda: feminist bank teller vs teller": 1.288
+        }
+      },
+      "polling": {
+        "topline r": 0.7027184849261986,
+        "topline error": 0.35560185185185184,
+        "gaps r": 0.5604722957601306,
+        "gap ratio": 0.434329721576093,
+        "gap sign right (clear gaps)": 0.8354430379746836,
+        "gap error (SD)": 0.366562589166909
+      }
+    },
+    "GPT-4.1-mini, summary": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.613875,
+        "demand curve error (pp)": 18.16783618049434,
+        "price slope": -0.3027424375406792,
+        "products r(buy rate)": 0.8246889738615791,
+        "products r(price slope)": 0.4081113666095212
+      },
+      "ab": {
+        "r(effects)": 0.3324938573989543,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 0.5816028843697857,
+        "effects": {
+          "disease: loss vs gain frame": 2.271,
+          "base rate: 70 vs 30 engineers": 0.462,
+          "outcome bias: died vs succeeded": -0.046,
+          "less is more: lose 5c vs nothing": -0.095,
+          "less is more: lose 25c vs nothing": -0.288,
+          "proportion dominance 1: B vs A": 0.064,
+          "proportion dominance 1: C vs A": -0.006,
+          "proportion dominance 2: B vs A": 0.226,
+          "proportion dominance 2: C vs A": 0.164,
+          "sunk cost: paid $50 card vs none": 0.835,
+          "drive to save $10: on $250 vs $30": 1.311,
+          "willingness to accept vs pay": 0.123,
+          "pay for partial vs full protection": -0.538,
+          "Allais: form 2 vs form 1": -0.518,
+          "myside: ban German car vs Ford": -0.17,
+          "Linda: feminist bank teller vs teller": 0.785
+        }
+      },
+      "polling": {
+        "topline r": 0.6961403423093205,
+        "topline error": 0.3145833333333333,
+        "gaps r": 0.7135810294975641,
+        "gap ratio": 0.8836147069163988,
+        "gap sign right (clear gaps)": 0.8481012658227848,
+        "gap error (SD)": 0.312818970576539
+      }
+    },
+    "GPT-4.1-mini, full": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.303375,
+        "demand curve error (pp)": 15.373392959293694,
+        "price slope": -0.2388897821655668,
+        "products r(buy rate)": 0.8078812516076338,
+        "products r(price slope)": 0.6585030872967502
+      },
+      "ab": {
+        "r(effects)": 0.5270415830565464,
+        "sign right (clear effects)": 0.6875,
+        "effect error (d)": 0.48971763299973253,
+        "effects": {
+          "disease: loss vs gain frame": 0.755,
+          "base rate: 70 vs 30 engineers": 1.785,
+          "outcome bias: died vs succeeded": 0.011,
+          "less is more: lose 5c vs nothing": -0.241,
+          "less is more: lose 25c vs nothing": -0.036,
+          "proportion dominance 1: B vs A": 0.164,
+          "proportion dominance 1: C vs A": 0.08,
+          "proportion dominance 2: B vs A": 0.024,
+          "proportion dominance 2: C vs A": 0.068,
+          "sunk cost: paid $50 card vs none": 0.531,
+          "drive to save $10: on $250 vs $30": 1.482,
+          "willingness to accept vs pay": 0.601,
+          "pay for partial vs full protection": -0.64,
+          "Allais: form 2 vs form 1": 0.0,
+          "myside: ban German car vs Ford": 0.063,
+          "Linda: feminist bank teller vs teller": 1.364
+        }
+      },
+      "polling": {
+        "topline r": 0.7724984434420591,
+        "topline error": 0.21101851851851847,
+        "gaps r": 0.8324627538773381,
+        "gap ratio": 1.2927408029629452,
+        "gap sign right (clear gaps)": 0.8860759493670886,
+        "gap error (SD)": 0.32611016857060154
+      }
+    },
+    "JEV-9B J, demographics": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.49275,
+        "demand curve error (pp)": 22.96485611467028,
+        "price slope": -0.019449557453727274,
+        "products r(buy rate)": 0.5801685747190113,
+        "products r(price slope)": 0.26580617557244446
+      },
+      "ab": {
+        "r(effects)": 0.2306486091179529,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 1.1260690757624245,
+        "effects": {
+          "disease: loss vs gain frame": -2.028,
+          "base rate: 70 vs 30 engineers": 0.189,
+          "outcome bias: died vs succeeded": -4.201,
+          "less is more: lose 5c vs nothing": 1.967,
+          "less is more: lose 25c vs nothing": 2.207,
+          "proportion dominance 1: B vs A": 0.0,
+          "proportion dominance 1: C vs A": 0.0,
+          "proportion dominance 2: B vs A": 0.293,
+          "proportion dominance 2: C vs A": 0.408,
+          "sunk cost: paid $50 card vs none": 0.528,
+          "drive to save $10: on $250 vs $30": 0.512,
+          "willingness to accept vs pay": -0.342,
+          "pay for partial vs full protection": -0.879,
+          "Allais: form 2 vs form 1": -1.781,
+          "myside: ban German car vs Ford": 0.132,
+          "Linda: feminist bank teller vs teller": 0.354
+        }
+      },
+      "polling": {
+        "topline r": 0.6999687801669154,
+        "topline error": 0.46731481481481496,
+        "gaps r": 0.8123571654330647,
+        "gap ratio": 1.7379487768345592,
+        "gap sign right (clear gaps)": 0.8734177215189873,
+        "gap error (SD)": 0.49764964434244047
+      }
+    },
+    "JEV-9B P, demographics": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.506875,
+        "demand curve error (pp)": 19.762152839375386,
+        "price slope": -0.054123916353397014,
+        "products r(buy rate)": 0.6170317314629782,
+        "products r(price slope)": 0.35885396957663523
+      },
+      "ab": {
+        "r(effects)": 0.08289057772843451,
+        "sign right (clear effects)": 0.6875,
+        "effect error (d)": 0.6579570914333372,
+        "effects": {
+          "disease: loss vs gain frame": -1.288,
+          "base rate: 70 vs 30 engineers": 0.345,
+          "outcome bias: died vs succeeded": -1.097,
+          "less is more: lose 5c vs nothing": 0.082,
+          "less is more: lose 25c vs nothing": -0.05,
+          "proportion dominance 1: B vs A": -0.291,
+          "proportion dominance 1: C vs A": 0.043,
+          "proportion dominance 2: B vs A": 0.337,
+          "proportion dominance 2: C vs A": 0.438,
+          "sunk cost: paid $50 card vs none": 0.396,
+          "drive to save $10: on $250 vs $30": 0.188,
+          "willingness to accept vs pay": 0.105,
+          "pay for partial vs full protection": -0.451,
+          "Allais: form 2 vs form 1": -0.459,
+          "myside: ban German car vs Ford": 0.239,
+          "Linda: feminist bank teller vs teller": 0.396
+        }
+      },
+      "polling": {
+        "topline r": 0.6156816615003917,
+        "topline error": 0.3859722222222222,
+        "gaps r": 0.8106077392080578,
+        "gap ratio": 1.4509865955220584,
+        "gap sign right (clear gaps)": 0.7848101265822784,
+        "gap error (SD)": 0.42337182342582785
+      }
+    },
+    "JEV-9B J, full": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.534625,
+        "demand curve error (pp)": 23.06846792039022,
+        "price slope": -0.0809803608021041,
+        "products r(buy rate)": 0.4397369020562306,
+        "products r(price slope)": 0.39514387495616965
+      },
+      "ab": {
+        "r(effects)": 0.3624224684220274,
+        "sign right (clear effects)": 0.625,
+        "effect error (d)": 1.0602504373705954,
+        "effects": {
+          "disease: loss vs gain frame": 0.0,
+          "base rate: 70 vs 30 engineers": 1.981,
+          "outcome bias: died vs succeeded": -4.201,
+          "less is more: lose 5c vs nothing": 0.692,
+          "less is more: lose 25c vs nothing": 0.764,
+          "proportion dominance 1: B vs A": 0.0,
+          "proportion dominance 1: C vs A": 0.0,
+          "proportion dominance 2: B vs A": 0.675,
+          "proportion dominance 2: C vs A": 0.654,
+          "sunk cost: paid $50 card vs none": 1.25,
+          "drive to save $10: on $250 vs $30": 1.992,
+          "willingness to accept vs pay": -0.512,
+          "pay for partial vs full protection": -1.136,
+          "Allais: form 2 vs form 1": -1.671,
+          "myside: ban German car vs Ford": 0.047,
+          "Linda: feminist bank teller vs teller": 1.849
+        }
+      },
+      "polling": {
+        "topline r": 0.7722365003016547,
+        "topline error": 0.46921296296296294,
+        "gaps r": 0.5561702782968385,
+        "gap ratio": 0.5270940016407992,
+        "gap sign right (clear gaps)": 0.5949367088607594,
+        "gap error (SD)": 0.3765313225829101
+      }
+    },
+    "JEV-9B P, full": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.5255,
+        "demand curve error (pp)": 20.604354801632933,
+        "price slope": -0.0604005298496352,
+        "products r(buy rate)": 0.5626878393358477,
+        "products r(price slope)": 0.372189853597351
+      },
+      "ab": {
+        "r(effects)": 0.33083146305366357,
+        "sign right (clear effects)": 0.5625,
+        "effect error (d)": 0.6440050008794097,
+        "effects": {
+          "disease: loss vs gain frame": -0.67,
+          "base rate: 70 vs 30 engineers": 0.691,
+          "outcome bias: died vs succeeded": -1.455,
+          "less is more: lose 5c vs nothing": -0.006,
+          "less is more: lose 25c vs nothing": -0.137,
+          "proportion dominance 1: B vs A": -0.412,
+          "proportion dominance 1: C vs A": -0.078,
+          "proportion dominance 2: B vs A": 0.4,
+          "proportion dominance 2: C vs A": 0.479,
+          "sunk cost: paid $50 card vs none": 0.419,
+          "drive to save $10: on $250 vs $30": 0.313,
+          "willingness to accept vs pay": 0.173,
+          "pay for partial vs full protection": -0.587,
+          "Allais: form 2 vs form 1": -0.204,
+          "myside: ban German car vs Ford": 0.175,
+          "Linda: feminist bank teller vs teller": 1.183
+        }
+      },
+      "polling": {
+        "topline r": 0.7635273762343251,
+        "topline error": 0.33310185185185187,
+        "gaps r": 0.5942108469518937,
+        "gap ratio": 0.34192270797912,
+        "gap sign right (clear gaps)": 0.6455696202531646,
+        "gap error (SD)": 0.3661740047735418
+      }
+    },
+    "JEV-9B J, summary": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.373125,
+        "demand curve error (pp)": 16.348243474131046,
+        "price slope": -0.1130980511888687,
+        "products r(buy rate)": 0.6891222571781407,
+        "products r(price slope)": 0.4435305865342942
+      },
+      "ab": {
+        "r(effects)": 0.34213147741559685,
+        "sign right (clear effects)": 0.75,
+        "effect error (d)": 0.7129913232211584,
+        "effects": {
+          "disease: loss vs gain frame": -0.06,
+          "base rate: 70 vs 30 engineers": -0.419,
+          "outcome bias: died vs succeeded": -3.138,
+          "less is more: lose 5c vs nothing": 1.027,
+          "less is more: lose 25c vs nothing": 1.493,
+          "proportion dominance 1: B vs A": 0.195,
+          "proportion dominance 1: C vs A": 0.188,
+          "proportion dominance 2: B vs A": 0.383,
+          "proportion dominance 2: C vs A": 0.25,
+          "sunk cost: paid $50 card vs none": 0.429,
+          "drive to save $10: on $250 vs $30": 0.648,
+          "willingness to accept vs pay": -0.46,
+          "pay for partial vs full protection": -0.817,
+          "Allais: form 2 vs form 1": 0.381,
+          "myside: ban German car vs Ford": 0.263,
+          "Linda: feminist bank teller vs teller": 0.068
+        }
+      },
+      "polling": {
+        "topline r": 0.7732371672402178,
+        "topline error": 0.4079166666666667,
+        "gaps r": 0.7770511320338614,
+        "gap ratio": 1.3237213278519755,
+        "gap sign right (clear gaps)": 0.759493670886076,
+        "gap error (SD)": 0.379078914910964
+      }
+    },
+    "JEV-9B P, summary": {
+      "participants": 200,
+      "pricing": {
+        "buy rate": 0.45275,
+        "demand curve error (pp)": 16.307999238077368,
+        "price slope": -0.08384520517492505,
+        "products r(buy rate)": 0.6913122714245359,
+        "products r(price slope)": 0.26717102800071585
+      },
+      "ab": {
+        "r(effects)": 0.15288694634984848,
+        "sign right (clear effects)": 0.5625,
+        "effect error (d)": 0.5447462850508628,
+        "effects": {
+          "disease: loss vs gain frame": -0.646,
+          "base rate: 70 vs 30 engineers": 0.305,
+          "outcome bias: died vs succeeded": -0.515,
+          "less is more: lose 5c vs nothing": -0.032,
+          "less is more: lose 25c vs nothing": -0.263,
+          "proportion dominance 1: B vs A": -0.303,
+          "proportion dominance 1: C vs A": -0.022,
+          "proportion dominance 2: B vs A": 0.29,
+          "proportion dominance 2: C vs A": 0.326,
+          "sunk cost: paid $50 card vs none": 0.258,
+          "drive to save $10: on $250 vs $30": 0.272,
+          "willingness to accept vs pay": -0.033,
+          "pay for partial vs full protection": -0.526,
+          "Allais: form 2 vs form 1": 0.29,
+          "myside: ban German car vs Ford": 0.248,
+          "Linda: feminist bank teller vs teller": 0.499
+        }
+      },
+      "polling": {
+        "topline r": 0.5809159042927968,
+        "topline error": 0.36537037037037035,
+        "gaps r": 0.7611364847023782,
+        "gap ratio": 1.0590852794787298,
+        "gap sign right (clear gaps)": 0.7341772151898734,
+        "gap error (SD)": 0.3488504012102811
+      }
+    },
+    "baseline: no effect / no gap": {
+      "ab": {
+        "effect error (d)": 0.6255198230528254
+      },
+      "polling": {
+        "gap error (SD)": 0.31505539082753814
+      }
+    }
+  },
+  "clear effects": [
+    "disease: loss vs gain frame",
+    "base rate: 70 vs 30 engineers",
+    "outcome bias: died vs succeeded",
+    "less is more: lose 5c vs nothing",
+    "less is more: lose 25c vs nothing",
+    "proportion dominance 1: B vs A",
+    "proportion dominance 1: C vs A",
+    "proportion dominance 2: B vs A",
+    "proportion dominance 2: C vs A",
+    "sunk cost: paid $50 card vs none",
+    "drive to save $10: on $250 vs $30",
+    "willingness to accept vs pay",
+    "pay for partial vs full protection",
+    "Allais: form 2 vs form 1",
+    "myside: ban German car vs Ford",
+    "Linda: feminist bank teller vs teller"
+  ],
+  "clear gaps": 79
+}

@@ -1,0 +1,37 @@
+{
+  "dataset": "LLM-Digital-Twin/Twin-2K-500",
+  "dataset_revision": "f883165a3026fde855dfd448e0cd16443ab257b6",
+  "scorer_revision": "f1eed510c9a4fb47aaa9bb46e178aaa2d9224623",
+  "model": "autotrust/JEV-9B",
+  "model_revision": "7ac669b8fb476ba926491e3d1c39f9330d68dbed",
+  "calibration": "fixed questionnaire ranges for fitting; target SDs only for evaluation",
+  "baseline_split": "seed 0; 300 training participants; 1758 separate evaluation participants",
+  "sha256": {
+    "artifacts/baselines.json": "a3cb54e95dcfe96b569b90a825edda74b22b529cea6db441e97b4ddbcccc59a1",
+    "artifacts/calibration.json": "2917f19c7ae9a5f07396cceecd49d76870653d51b40361e6b01390f0aabd6306",
+    "artifacts/demographics-n200.json": "b2a5b5bd17be778aaadcafcf963a8e863869fa7f9ce01c2fb231248c5258b752",
+    "artifacts/full-n200.json": "ca3b621f8c6e66e3e5bca14cb58af06d3c92426f5c7b910e71d20e0be605c436",
+    "artifacts/person-signal.json": "db78cd8023f5a133cdec1d72df8a5b276023cff6c2554923e0ae210c25059269",
+    "artifacts/summary-n200.json": "0e6e83100e284ae083cd90e75dcb26833d2b747901b547d8d0cbc5cc4870f3e4",
+    "artifacts/summary-n2058.json": "feeb13c0dd53d245f52e9c017820a30728e8f63c4a91295dba388882a78420ec",
+    "artifacts/use-cases.json": "57a7cdc878eed8f603bf7cc37326b424b2e4e0e3c10743b8e5d985efb20dcfac",
+    "popsim/example_pricing.json": "3d0d250904ede8eaa2e19092df59eb322d3ef4c69677774b50848c1f37774aaf",
+    "uv.lock": "d6818c07f73cbb7125fa3263ffe41e74ea029d685c789b14f4af2ce296d169bb"
+  },
+  "source_sha256": {
+    "popsim/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "popsim/app.py": "7c5b1cc7df329e53c9b270b957068e33f872978ac93bc6bf42c3e0fb3dbd8912",
+    "popsim/baselines.py": "a2910d4545dbe8beb6844bc1870fdd160e137de3be7786e13d19bfa343ca4360",
+    "popsim/cache.py": "6fb7df423d762fddfbcb2b2793a9d0ab7b0e393b2f8d79038c6ddc4018c4ab46",
+    "popsim/calibrate.py": "3add1a8f374c2dbccc663e0631ce7dab9adf08cf9cc5eb32954541d91c0b5536",
+    "popsim/decider.py": "a62bd5291eea81a727217d6ac7abdbdb5afb6d5df55f8b1793bca28b6a491b5b",
+    "popsim/demo.py": "69af0d4558496d5849f2a5ccdd1e4ac6dd6495ac4c32a9c4621c7fc884d1f28e",
+    "popsim/prepare.py": "cc980cc627fcb1c2372c5f7a761139ad5461959bc2c7ba406f79479dc50509fe",
+    "popsim/report.py": "7c9cde0637c95cfa7de3fb56e703464836d0f6edfe62f661a33c3ac59360ddda",
+    "popsim/run.py": "5d209490cd91b022f813ff1b4e4eb65482f263f87256fc18da962f0e920ec775",
+    "popsim/score.py": "4f3c42ba643771e65d3c9fa51e9c6b0ccfb16c2efa57ff67ee02379c6485a74e",
+    "popsim/signal.py": "271bfc465cdaf5dbc134922c1af9b5bb151512a8b25e286f50bdbf1d6e382c6b",
+    "popsim/twin.py": "1b37fcd04be11dd477b3642f6e1c8693227a0777cb15f468712e7bdfa95e7414",
+    "popsim/uses.py": "f7a4bad5636d8785fa037cd4a153420a3567cf25e79484a06029744a9903ebdb"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "run": "results/summary-n2058",
+  "questions": 78,
+  "arms": {
+    "humans, retest": {
+      "people": 2058,
+      "signal": [
+        0.4787,
+        0.4395,
+        0.5174
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": null
+    },
+    "JEV-9B J": {
+      "people": 2058,
+      "signal": [
+        0.1008,
+        0.067,
+        0.1377
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": null
+    },
+    "JEV-9B P": {
+      "people": 2058,
+      "signal": [
+        0.0677,
+        0.0405,
+        0.098
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0331,
+        0.0206,
+        0.0458
+      ]
+    },
+    "Demographics Only - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0623,
+        0.0403,
+        0.0871
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0385,
+        0.0203,
+        0.0589
+      ]
+    },
+    "Persona Summary - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0823,
+        0.0545,
+        0.112
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0185,
+        0.0041,
+        0.0348
+      ]
+    },
+    "Persona Summary - JSON Persona - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0803,
+        0.0518,
+        0.1113
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0205,
+        0.0022,
+        0.0418
+      ]
+    },
+    "Text Persona - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.102,
+        0.0677,
+        0.1385
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        -0.0012,
+        -0.0147,
+        0.0127
+      ]
+    },
+    "Text Persona (Default Temperature) - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0937,
+        0.0608,
+        0.1294
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0071,
+        -0.0055,
+        0.0202
+      ]
+    },
+    "Text Persona (Reasoning) - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0952,
+        0.0624,
+        0.131
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0056,
+        -0.007,
+        0.0177
+      ]
+    },
+    "Text Persona (Repeating Questions) - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.1069,
+        0.0721,
+        0.1439
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        -0.0061,
+        -0.0192,
+        0.0074
+      ]
+    },
+    "JSON Persona - GPT4.1-mini": {
+      "people": 1000,
+      "signal": [
+        0.0931,
+        0.062,
+        0.1269
+      ],
+      "paired_people": 1000,
+      "vs JEV-9B J": [
+        0.0104,
+        -0.0031,
+        0.024
+      ]
+    },
+    "JSON Persona (Predicted Output) - GPT4.1-mini": {
+      "people": 2058,
+      "signal": [
+        0.0891,
+        0.0596,
+        0.1212
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        0.0117,
+        -0.0042,
+        0.0291
+      ]
+    },
+    "JSON Persona - GPT4.1": {
+      "people": 2058,
+      "signal": [
+        0.1026,
+        0.0704,
+        0.1368
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        -0.0018,
+        -0.0165,
+        0.0131
+      ]
+    },
+    "JSON Persona (Predicted Output) - GPT4.1": {
+      "people": 2050,
+      "signal": [
+        0.109,
+        0.0753,
+        0.1453
+      ],
+      "paired_people": 2050,
+      "vs JEV-9B J": [
+        -0.0084,
+        -0.0199,
+        0.0024
+      ]
+    },
+    "Text Persona - Gemini-Flash2.5": {
+      "people": 2058,
+      "signal": [
+        0.1044,
+        0.0721,
+        0.1397
+      ],
+      "paired_people": 2058,
+      "vs JEV-9B J": [
+        -0.0036,
+        -0.0171,
+        0.0109
+      ]
+    },
+    "LLM Finetuning (500 training samples) - GPT4.1-mini": {
+      "people": 1558,
+      "signal": [
+        0.0469,
+        0.026,
+        0.0699
+      ],
+      "paired_people": 1558,
+      "vs JEV-9B J": [
+        0.0527,
+        0.0283,
+        0.0834
+      ]
+    }
+  }
+}

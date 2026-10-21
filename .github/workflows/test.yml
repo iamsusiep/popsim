@@ -1,0 +1,22 @@
+name: tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --locked
+      - run: uv run pytest
+        env:
+          HF_HUB_OFFLINE: '1'
+          HF_HOME: '${{ runner.temp }}/empty-hf'
+      - run: uv run python -m popsim.demo
+        env:
+          HF_HUB_OFFLINE: '1'
+          HF_HOME: '${{ runner.temp }}/empty-hf'
+      - run: uv build

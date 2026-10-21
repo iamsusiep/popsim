@@ -1,0 +1,517 @@
+{
+  "results": "results/summary-n2058.parquet",
+  "participants": 2058,
+  "persona": "summary",
+  "arms": {
+    "GPT-4.1-mini, summary": "Persona_Summary_-_GPT4.1-mini",
+    "GPT-4.1-mini, full": "Text_Persona_-_GPT4.1-mini",
+    "GPT-4.1-mini, full, temp 1": "Text_Persona_(Default_Temperature)_-_GPT4.1-mini",
+    "JEV-9B J": "J",
+    "JEV-9B P": "P",
+    "majority answer (target-population oracle)": "majority",
+    "population draw (target-population oracle)": "draw"
+  },
+  "tasks": {
+    "Allais": {
+      "humans, retest": 0.741,
+      "random": 0.503,
+      "GPT-4.1-mini, summary": 0.531,
+      "GPT-4.1-mini, full": 0.563,
+      "GPT-4.1-mini, full, temp 1": 0.561,
+      "JEV-9B J": 0.584,
+      "JEV-9B P": 0.54,
+      "majority answer (target-population oracle)": 0.633,
+      "population draw (target-population oracle)": 0.534
+    },
+    "WTA/WTP-Thaler": {
+      "humans, retest": 0.892,
+      "random": 0.612,
+      "GPT-4.1-mini, summary": 0.773,
+      "GPT-4.1-mini, full": 0.797,
+      "GPT-4.1-mini, full, temp 1": 0.798,
+      "JEV-9B J": 0.714,
+      "JEV-9B P": 0.678,
+      "majority answer (target-population oracle)": 0.802,
+      "population draw (target-population oracle)": 0.754
+    },
+    "absolute vs. relative savings": {
+      "humans, retest": 0.792,
+      "random": 0.476,
+      "GPT-4.1-mini, summary": 0.613,
+      "GPT-4.1-mini, full": 0.649,
+      "GPT-4.1-mini, full, temp 1": 0.639,
+      "JEV-9B J": 0.57,
+      "JEV-9B P": 0.532,
+      "majority answer (target-population oracle)": 0.697,
+      "population draw (target-population oracle)": 0.599
+    },
+    "anchoring and adjustment": {
+      "humans, retest": 0.842,
+      "random": 0.63,
+      "GPT-4.1-mini, summary": 0.629,
+      "GPT-4.1-mini, full": 0.63,
+      "GPT-4.1-mini, full, temp 1": 0.633,
+      "JEV-9B J": NaN,
+      "JEV-9B P": NaN,
+      "majority answer (target-population oracle)": NaN,
+      "population draw (target-population oracle)": NaN
+    },
+    "base rate": {
+      "humans, retest": 0.835,
+      "random": 0.681,
+      "GPT-4.1-mini, summary": 0.642,
+      "GPT-4.1-mini, full": 0.793,
+      "GPT-4.1-mini, full, temp 1": 0.78,
+      "JEV-9B J": 0.589,
+      "JEV-9B P": 0.629,
+      "majority answer (target-population oracle)": 0.812,
+      "population draw (target-population oracle)": 0.761
+    },
+    "conjunction problem (Linda)": {
+      "humans, retest": 0.824,
+      "random": 0.651,
+      "GPT-4.1-mini, summary": 0.728,
+      "GPT-4.1-mini, full": 0.761,
+      "GPT-4.1-mini, full, temp 1": 0.754,
+      "JEV-9B J": 0.639,
+      "JEV-9B P": 0.68,
+      "majority answer (target-population oracle)": 0.819,
+      "population draw (target-population oracle)": 0.753
+    },
+    "denominator neglect": {
+      "humans, retest": 0.722,
+      "random": 0.482,
+      "GPT-4.1-mini, summary": 0.368,
+      "GPT-4.1-mini, full": 0.574,
+      "GPT-4.1-mini, full, temp 1": 0.56,
+      "JEV-9B J": 0.386,
+      "JEV-9B P": 0.487,
+      "majority answer (target-population oracle)": 0.639,
+      "population draw (target-population oracle)": 0.538
+    },
+    "false consensus": {
+      "humans, retest": 0.861,
+      "random": 0.641,
+      "GPT-4.1-mini, summary": 0.71,
+      "GPT-4.1-mini, full": 0.744,
+      "GPT-4.1-mini, full, temp 1": 0.744,
+      "JEV-9B J": 0.723,
+      "JEV-9B P": 0.706,
+      "majority answer (target-population oracle)": 0.774,
+      "population draw (target-population oracle)": 0.71
+    },
+    "framing problem": {
+      "humans, retest": 0.803,
+      "random": 0.65,
+      "GPT-4.1-mini, summary": 0.73,
+      "GPT-4.1-mini, full": 0.701,
+      "GPT-4.1-mini, full, temp 1": 0.7,
+      "JEV-9B J": 0.684,
+      "JEV-9B P": 0.642,
+      "majority answer (target-population oracle)": 0.787,
+      "population draw (target-population oracle)": 0.725
+    },
+    "less is more": {
+      "humans, retest": 0.831,
+      "random": 0.588,
+      "GPT-4.1-mini, summary": 0.704,
+      "GPT-4.1-mini, full": 0.757,
+      "GPT-4.1-mini, full, temp 1": 0.755,
+      "JEV-9B J": 0.706,
+      "JEV-9B P": 0.675,
+      "majority answer (target-population oracle)": 0.728,
+      "population draw (target-population oracle)": 0.685
+    },
+    "myside": {
+      "humans, retest": 0.846,
+      "random": 0.634,
+      "GPT-4.1-mini, summary": 0.726,
+      "GPT-4.1-mini, full": 0.766,
+      "GPT-4.1-mini, full, temp 1": 0.759,
+      "JEV-9B J": 0.795,
+      "JEV-9B P": 0.724,
+      "majority answer (target-population oracle)": 0.79,
+      "population draw (target-population oracle)": 0.714
+    },
+    "non-separability of risks and benefits": {
+      "humans, retest": 0.863,
+      "random": 0.626,
+      "GPT-4.1-mini, summary": 0.779,
+      "GPT-4.1-mini, full": 0.803,
+      "GPT-4.1-mini, full, temp 1": 0.795,
+      "JEV-9B J": 0.658,
+      "JEV-9B P": 0.623,
+      "majority answer (target-population oracle)": 0.811,
+      "population draw (target-population oracle)": 0.755
+    },
+    "omission": {
+      "humans, retest": 0.806,
+      "random": 0.602,
+      "GPT-4.1-mini, summary": 0.678,
+      "GPT-4.1-mini, full": 0.715,
+      "GPT-4.1-mini, full, temp 1": 0.701,
+      "JEV-9B J": 0.498,
+      "JEV-9B P": 0.594,
+      "majority answer (target-population oracle)": 0.717,
+      "population draw (target-population oracle)": 0.639
+    },
+    "outcome bias": {
+      "humans, retest": 0.863,
+      "random": 0.637,
+      "GPT-4.1-mini, summary": 0.843,
+      "GPT-4.1-mini, full": 0.845,
+      "GPT-4.1-mini, full, temp 1": 0.844,
+      "JEV-9B J": 0.539,
+      "JEV-9B P": 0.582,
+      "majority answer (target-population oracle)": 0.845,
+      "population draw (target-population oracle)": 0.788
+    },
+    "pricing": {
+      "humans, retest": 0.839,
+      "random": 0.501,
+      "GPT-4.1-mini, summary": 0.624,
+      "GPT-4.1-mini, full": 0.671,
+      "GPT-4.1-mini, full, temp 1": 0.666,
+      "JEV-9B J": 0.63,
+      "JEV-9B P": 0.569,
+      "majority answer (target-population oracle)": 0.694,
+      "population draw (target-population oracle)": 0.644
+    },
+    "prob matching vs. max": {
+      "humans, retest": 0.744,
+      "random": 0.501,
+      "GPT-4.1-mini, summary": 0.762,
+      "GPT-4.1-mini, full": 0.762,
+      "GPT-4.1-mini, full, temp 1": 0.762,
+      "JEV-9B J": 0.762,
+      "JEV-9B P": 0.741,
+      "majority answer (target-population oracle)": 0.762,
+      "population draw (target-population oracle)": 0.66
+    },
+    "sunk cost fallacy": {
+      "humans, retest": 0.788,
+      "random": 0.623,
+      "GPT-4.1-mini, summary": 0.682,
+      "GPT-4.1-mini, full": 0.662,
+      "GPT-4.1-mini, full, temp 1": 0.66,
+      "JEV-9B J": 0.692,
+      "JEV-9B P": 0.624,
+      "majority answer (target-population oracle)": 0.754,
+      "population draw (target-population oracle)": 0.672
+    }
+  },
+  "mean_accuracy": {
+    "humans, retest": 0.8156,
+    "random": 0.588,
+    "GPT-4.1-mini, summary": 0.6808,
+    "GPT-4.1-mini, full": 0.7227,
+    "GPT-4.1-mini, full, temp 1": 0.7174,
+    "JEV-9B J": 0.6356,
+    "JEV-9B P": 0.6266,
+    "majority answer (target-population oracle)": 0.754,
+    "population draw (target-population oracle)": 0.6832
+  },
+  "normalized_accuracy": {
+    "humans, retest": 1.0,
+    "random": 0.7209,
+    "GPT-4.1-mini, summary": 0.8347,
+    "GPT-4.1-mini, full": 0.8861,
+    "GPT-4.1-mini, full, temp 1": 0.8795,
+    "JEV-9B J": 0.7792,
+    "JEV-9B P": 0.7683,
+    "majority answer (target-population oracle)": 0.9244,
+    "population draw (target-population oracle)": 0.8376
+  },
+  "person_signal": {
+    "humans, retest": 0.4787,
+    "GPT-4.1-mini, summary": 0.0823,
+    "GPT-4.1-mini, full": 0.102,
+    "GPT-4.1-mini, full, temp 1": 0.0937,
+    "JEV-9B J": 0.1008,
+    "JEV-9B P": 0.0677,
+    "majority answer (target-population oracle)": 0.0,
+    "population draw (target-population oracle)": -0.0027
+  },
+  "aggregate": {
+    "GPT-4.1-mini, summary": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": -0.9999999999999999,
+          "rmse_pp": 20.485902409475244
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 0.9702901653397649
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.6087595874350709,
+          "rmse_pp": 20.01104716502122
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.5844634014817771
+      }
+    },
+    "GPT-4.1-mini, full": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 17.81046239116856
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 0.886826334438579
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.7142857142857143,
+          "rmse_pp": 19.395665144443036
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.505460441625786
+      }
+    },
+    "GPT-4.1-mini, full, temp 1": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 17.49739863299583
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 0.888562920558953
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.7387687194103584,
+          "rmse_pp": 17.188752516875873
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.5130670589731667
+      }
+    },
+    "JEV-9B J": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 14.145480079692925
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 0.967169995884141
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.22360679774997896,
+          "rmse_pp": 25.879413766653986
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.5439694107780861
+      }
+    },
+    "JEV-9B P": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 7.153513491544924
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 1.0008567334979332
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.42553388057604524,
+          "rmse_pp": 13.176718495047322
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 1.1535317821285664
+      }
+    },
+    "majority answer (target-population oracle)": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 10.258882530224176
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 0.9913187057166891
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.6546536707079772,
+          "rmse_pp": 29.452677888948607
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.0
+      }
+    },
+    "population draw (target-population oracle)": {
+      "binary": {
+        "questions": 61,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.3888767559005022
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 0.7159363877742758
+        },
+        "null": {
+          "median_spearman": 0.7199999999999999,
+          "rmse_pp": 15.741799110597151
+        },
+        "uniform": {
+          "rmse_pp": 12.174962202048127
+        },
+        "sim_sd_ratio": 1.0001222997244674
+      },
+      "multi": {
+        "questions": 43,
+        "retest": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 1.5957841590880009
+        },
+        "sim": {
+          "median_spearman": 0.9999999999999999,
+          "rmse_pp": 0.9104595419396871
+        },
+        "null": {
+          "median_spearman": 0.6012176281827412,
+          "rmse_pp": 12.767192720800354
+        },
+        "uniform": {
+          "rmse_pp": 11.957650388200927
+        },
+        "sim_sd_ratio": 0.9972031494634093
+      }
+    }
+  }
+}
