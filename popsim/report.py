@@ -62,6 +62,68 @@ def calibration_figure(data):
     return fig
 
 
+def probing_figure(probes_data, baseline):
+    pm = probes_data["polling_metrics"]
+    all78 = probes_data["all_78_signal_items"]
+    panels = [
+        (
+            "18 polling items",
+            "Mean correlation across 1,758 test people (r)",
+            [
+                ("JEV-9B J (argmax)", pm["JEV-9B J (argmax, zero-shot)"]["corr_w1_3"], "#aebac4"),
+                ("Demographic ridge (rounded)", pm["Demographic ridge (rounded, lam=10)"]["corr_w1_3"], "#aebac4"),
+                ("JEV-9B output probs ridge", pm["JEV-9B probs ridge (300 train)"]["corr_w1_3"], "#83b9ba"),
+                ("Demographic ridge (continuous)", pm["Demographic ridge (continuous, CV)"]["corr_w1_3"], "#83b9ba"),
+                ("JEV-9B E[Y] (expected value)", pm["JEV-9B E[Y] (prob expectation, zero-shot)"]["corr_w1_3"], "#4a9396"),
+                ("Layer 23 [decision]: probe", pm["Probe [decision] Layer 23"]["corr_w1_3"], "#126b71"),
+            ],
+        ),
+        (
+            "All 78 signal questions",
+            "Mean correlation across 1,758 test people (r)",
+            [
+                ("JEV-9B J (argmax)", all78["JEV-9B J (argmax)"]["person_signal"], "#aebac4"),
+                ("GPT-4.1-mini (full persona)", baseline["GPT-4.1-mini, full"]["person_signal"], "#aebac4"),
+                ("Demographic ridge (rounded)", baseline["demographic ridge, 300 training humans"]["person_signal"], "#83b9ba"),
+                ("Gemini 2.5 Flash (full persona)", baseline["Gemini 2.5 Flash, full"]["person_signal"], "#83b9ba"),
+                ("Demographic ridge (continuous)", all78["Demographic ridge (continuous, CV)"]["person_signal"], "#4a9396"),
+                ("Layer 23 person probe", all78["Reusable Layer 23 Person Embedding Probe"]["person_signal"], "#126b71"),
+            ],
+        ),
+    ]
+    fig = Figure(figsize=(12, 4.4), facecolor="white")
+    axes = fig.subplots(1, 2)
+    fig.subplots_adjust(left=0.23, right=0.97, bottom=0.24, top=0.73, wspace=0.68)
+    fig.suptitle("Individual answer correlation on held-out people", x=0.035, y=0.96,
+                 ha="left", fontsize=19, fontweight="bold", color="#172b3a")
+    fig.text(0.035, 0.86, "Higher is better · trained on 300 people, evaluated on 1,758 separate people",
+             fontsize=11, color="#52616b")
+    for ax, (title, metric, items) in zip(axes, panels):
+        labels = [ label for label, _, _ in items]
+        values = [val for _, val, _ in items]
+        colors = [c for _, _, c in items]
+        ax.barh(range(len(items)), values, height=0.58, color=colors)
+        ax.set_yticks(range(len(items)), labels, fontsize=9.5, color="#273d4a")
+        ax.invert_yaxis()
+        ax.set_xlim(0, max(values) * 1.25)
+        ax.set_title(title, loc="left", fontsize=11, pad=10, color="#172b3a", fontweight="bold")
+        ax.set_xlabel(metric, fontsize=9, labelpad=8, color="#52616b")
+        ax.tick_params(axis="both", length=0, labelsize=9, colors="#52616b")
+        ax.xaxis.grid(True, color="#e5ebee", linewidth=0.7)
+        ax.set_axisbelow(True)
+        for spine in ax.spines.values():
+            spine.set_visible(False)
+        for i, value in enumerate(values):
+            weight = "bold" if i == len(items) - 1 else "normal"
+            ax.text(value + max(values) * 0.03, i, f"{value:.3f}", va="center",
+                    fontsize=9.5, fontweight=weight, color="#172b3a")
+    fig.text(0.035, 0.09, "Twin-2K-500 · 18 polling items (human retest ceiling r = 0.657) and 78 signal items (ceiling r = 0.479)",
+             fontsize=10, color="#52616b")
+    fig.text(0.035, 0.03, "Probes read out JEV-9B Layer 23 activations at [decision]: with 5-fold CV on the 300 training people. Source: artifacts/probes.json",
+             fontsize=9, color="#52616b")
+    return fig
+
+
 def refresh(path, sections):
     text = path.read_text()
     for name, content in sections.items():
@@ -158,11 +220,14 @@ def main() -> None:
     )
     refresh(twin.ROOT / "README.md", {"highlights": highlights})
     chart = twin.ROOT / "docs" / "calibration.svg"
+    probe_chart = twin.ROOT / "docs" / "probing.svg"
     chart.parent.mkdir(exist_ok=True)
     with rc_context({"font.family": "DejaVu Sans", "svg.fonttype": "none", "svg.hashsalt": "popsim"}):
         calibration_figure(calibration).savefig(chart, metadata={"Date": None})
-    chart.write_text("\n".join(line.rstrip() for line in chart.read_text().splitlines()) + "\n")
-    files = [*(out / name for name in sources), twin.ROOT / "popsim" / "example_pricing.json", twin.ROOT / "uv.lock", chart]
+        probing_figure(probes_data, baseline).savefig(probe_chart, metadata={"Date": None})
+    for svg in (chart, probe_chart):
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
+    files = [*(out / name for name in sources), twin.ROOT / "popsim" / "example_pricing.json", twin.ROOT / "uv.lock", chart, probe_chart]
     manifest = {
         "dataset": twin.DATASET, "dataset_revision": twin.DATASET_REVISION,
         "scorer_revision": twin.CODE_REVISION, "model": MODEL, "model_revision": MODEL_REVISION,
@@ -172,7 +237,7 @@ def main() -> None:
         "source_sha256": {str(p.relative_to(twin.ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((twin.ROOT / "popsim").glob("*.py"))},
     }
     (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print("refreshed README.md, RESULTS.md, docs/calibration.svg and artifacts/manifest.json")
+    print("refreshed README.md, RESULTS.md, docs/calibration.svg, docs/probing.svg and artifacts/manifest.json")
 
 
 if __name__ == "__main__":

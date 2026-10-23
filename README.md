@@ -28,6 +28,8 @@ panel of **2,058 US adults**:
 
 ![Survey-only, raw-twin and calibrated-twin errors for pricing, polling and A/B effects](docs/calibration.svg)
 
+![Individual answer correlation on held-out people for 18 polling items and 78 signal questions](docs/probing.svg)
+
 <!-- START:highlights -->
 - **Pricing:** 17.26 → 8.87 pp RMSE (49% lower than survey alone).
 - **Polling:** 0.491 → 0.265 SD RMSE. **A/B:** 0.538 raw → 0.541 calibrated.
@@ -40,17 +42,22 @@ panel of **2,058 US adults**:
 
 ## How it works
 
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false, "padding": 18, "nodeSpacing": 30, "rankSpacing": 40}}}%%
-flowchart TD
-    A["Wave 1-3 persona profiles"] --> B["LLM digital twins (GPT / Gemini / JEV-9B)"]
-    C["300-person Wave 4 survey"] --> D["Aggregate calibration"]
-    C --> E["Layer 23 linear probe"]
-    B -->|"Output predictions"| D
-    B -->|"JEV-9B hidden states"| E
-    D --> F["Predict held-out items & 1,758 test humans"]
-    E --> F
+```text
+Wave 1-3 persona profiles (2,058 US adults)
+  │
+  ├──► Published LLM twins (GPT-4.1 / Gemini) ──► Output answers ──────────────┐
+  │                                                                            ▼
+  └──► JEV-9B decision model ───────────────────► Layer 23 [decision]: states  │
+                                                    │                          │
+300-person Wave 4 calibration survey ───────────────┼──► Fit ridge probe       ├──► Fit linear calibration
+                                                    ▼                          ▼
+                                                  Predict 1,758 held-out people & held-out items
 ```
+
+| Workflow | Model Signal Used | Calibration Data (`N = 300`) | Target Predicted | Module |
+| --- | --- | --- | --- | --- |
+| **1. Aggregate calibration** | Published twin output answers | Surveyed subset of products / items | Population buy rates, subgroup polling gaps, and A/B effects on held-out items | `popsim.calibrate` |
+| **2. Hidden-state probing** | `JEV-9B` Layer 23 `[decision]:` activations (`4,096` dims) | 300 training participants' Wave 4 answers | Individual answers for the remaining **1,758 held-out participants** | `popsim.probes` |
 
 ## Try it
 
