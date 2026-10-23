@@ -57,12 +57,10 @@ zero-shot `argmax` predictions. [Scores and split IDs](artifacts/baselines.json)
 
 ## Probing JEV-9B hidden representations
 
-To test whether `JEV-9B`'s internal representations contain individual-level information that its
-final `argmax` answers (`J`) fail to express, we captured hidden activations across layers
-`[7, 15, 19, 23, 27, 31]` at both the question-free end of `[state]` and the question-conditioned
-`[decision]:` token on the 18 polling items (`uses.ITEMS`). Regularized ridge probes and all
-supervised controls are fit strictly on the 300 training participants (with internal 5-fold CV)
-and evaluated on the same 1,758 disjoint test participants.
+We captured `JEV-9B` activations across layers `[7, 15, 19, 23, 27, 31]` at the end of `[state]`
+and at the `[decision]:` token on the 18 polling items (`uses.ITEMS`). Ridge probes and all
+supervised controls train on the 300 calibration participants (5-fold CV) and evaluate on the
+same 1,758 held-out test participants.
 
 <!-- START:probes -->
 | Arm (18 polling items) | r (W1–3) | r (W4) | Partial r (given demo) | Similarity | Gap RMSE (SD) | Gap ratio |
@@ -88,36 +86,32 @@ and evaluated on the same 1,758 disjoint test participants.
 | Humans, retest (wave 1-3 ceiling) | 1.000 | 0.657 | 1.000 | 1.000 | 0.037 | 1.000 |
 <!-- END:probes -->
 
-Key findings ([full metrics, bootstrap intervals and PC loadings](artifacts/probes.json)):
+Details are in [probes.json](artifacts/probes.json):
 
-- **Two-stage bottleneck (`argmax` vs. output projection):** Simply replacing `argmax` (`J`,
-  `r = 0.263`) with zero-shot expected value `E[Y]` from `JEV-9B`'s output probabilities reaches
-  `r = 0.316` (`partial r | demo = 0.185`) with zero training labels. Probing the Layer 23
-  `[decision]:` hidden state reaches **`r = 0.370`** (`0.371` for the residual probe, with subgroup
-  `gap_ratio = 0.981` vs. `1.654` for `JEV-9B J`), beating `JEV-9B probs ridge` by **`+0.066`**
-  (95% bootstrap CI `[+0.034, +0.103]`, 17/18 items) and continuous `Demographic ridge` by
-  **`+0.053`** (`[+0.034, +0.072]`, 15/18 items).
-- **Reusable person representation across all 78 signal items:** Probing at the end of `[state]`
-  (before the question) gets only `r = 0.122`, whereas averaging a participant's Layer 23
-  `[decision]:` vector across the other 17 questions (`Decomp A`) gets `r = 0.369`. Using that
-  mean Layer 23 `[decision]:` vector as a fixed person embedding across all **78 signal items**
-  reaches **`0.173` raw correlation** (**`0.326` disattenuated** by human retest reliability),
-  compared with `0.102` (`0.154` disattenuated) for `JEV-9B J` and `0.135` (`0.247` disattenuated)
-  for continuous `Demographic ridge`.
-- **Where and why the probe improves over JEV's output head:** On mainstream partisan policy items
-  (`False Cons. self _1..7, 9`), `JEV-9B E[Y]` already expresses most of the internal signal
-  (`0.537` vs. `0.548` for Layer 23). On `Wealth Tax` (`_8`), `Medicare Vouchers` (`_10`) and all
-  8 technology benefit/risk items (`QID288`, `QID289`), `JEV-9B`'s output head misweights its own
-  latent psychological axes—hallucinating large partisan (`PC2 = -0.407`) and emotional-stability
-  (`PC3 = +0.600`) effects on technology benefit and a `-0.750` general-anxiety (`PC4`) effect on
-  technology risk that are absent in real humans (`-0.022` to `+0.051`), while under-weighting
-  interpersonal warmth/pragmatism (`PC5`) and compassion (`PC7`).
-- **Person dependence and transfer boundary:** Permuting personas within identical demographic
-  strata (`party × ideology × gender × age`) drops Layer 23 correlation from `0.370` to the
-  demographic floor (`0.276`), confirming that the gain comes from individual-specific persona
-  content. However, the probe requires per-item calibration labels (`N = 300`): when holding out
-  target questions completely (leave-one-question-out `0.312` or leave-family-out `0.294`), a
-  shared probe does not exceed zero-shot `JEV-9B E[Y]` (`0.316`).
+- **Two-stage bottleneck:** Replacing `argmax` (`J`, `r = 0.263`) with probability-weighted
+  expected value `E[Y]` reaches `0.316` (`partial r = 0.185` given demographics) without training
+  labels. Probing Layer 23 at `[decision]:` reaches **`0.370`** (`0.371` for the residual probe,
+  with `gap_ratio = 0.981` vs. `1.654` for `JEV-9B J`). Over 5,000 question-bootstrap draws, the
+  Layer 23 probe beats `JEV-9B probs ridge` by `+0.066` (`[+0.034, +0.103]`, 17/18 items) and
+  continuous `Demographic ridge` by `+0.053` (`[+0.034, +0.072]`, 15/18 items).
+- **All 78 signal items:** Probing at the end of `[state]` before the question gets `0.122`.
+  Averaging a person's Layer 23 `[decision]:` vector across the other 17 questions (`Decomp A`)
+  gets `0.369`. Using that mean `[decision]:` vector as a fixed person embedding across all 78
+  signal questions reaches **`0.173` correlation** (`0.326` disattenuated by human retest
+  reliability), compared with `0.102` (`0.154`) for `JEV-9B J` and `0.135` (`0.247`) for
+  continuous `Demographic ridge`.
+- **Where the output head fails:** On mainstream partisan policy items (`_1..7, 9`), `JEV-9B E[Y]`
+  already matches most of the internal signal (`0.537` vs. `0.548` for Layer 23). On `Wealth Tax`
+  (`_8`), `Medicare Vouchers` (`_10`), and the 8 technology benefit/risk items (`QID288`, `QID289`),
+  the output head misweights its own latent PCs. It assigns large partisan (`PC2 = -0.407`) and
+  emotional-stability (`PC3 = +0.600`) weights to technology benefit, and a `-0.750` anxiety
+  weight (`PC4`) to technology risk. Real human responses show near-zero loading on those axes
+  (`-0.022` to `+0.051`) and instead track interpersonal warmth (`PC5`) and compassion (`PC7`).
+- **Person dependence and limits:** Shuffling personas within identical demographic strata
+  (`party × ideology × gender × age`) drops Layer 23 correlation from `0.370` to `0.276`. The
+  probe requires per-question calibration labels (`N = 300`): when target questions are held out
+  entirely (leave-one-question-out `0.312` or leave-family-out `0.294`), a shared probe does not
+  beat zero-shot `JEV-9B E[Y]` (`0.316`).
 
 ## Method and limits
 

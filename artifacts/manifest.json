@@ -28,7 +28,7 @@
     "popsim/demo.py": "69af0d4558496d5849f2a5ccdd1e4ac6dd6495ac4c32a9c4621c7fc884d1f28e",
     "popsim/prepare.py": "cc980cc627fcb1c2372c5f7a761139ad5461959bc2c7ba406f79479dc50509fe",
     "popsim/probes.py": "de2e25619aef67f286f156944824dd4374a4304d190c149acb9e69d7730ab1bf",
-    "popsim/report.py": "e89ab7a06963a60d4467fbbf627c2a71a880da727e5475afaa6529ce977dee52",
+    "popsim/report.py": "aba26a5738532b9111af355265a0858f23e54b3deeff98ec2129a0d4bca6cff1",
     "popsim/run.py": "5d209490cd91b022f813ff1b4e4eb65482f263f87256fc18da962f0e920ec775",
     "popsim/score.py": "4f3c42ba643771e65d3c9fa51e9c6b0ccfb16c2efa57ff67ee02379c6485a74e",
     "popsim/signal.py": "271bfc465cdaf5dbc134922c1af9b5bb151512a8b25e286f50bdbf1d6e382c6b",

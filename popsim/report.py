@@ -214,9 +214,8 @@ def main() -> None:
     highlights = (
         f"- **Pricing:** {price[0]:.2f} → {price[2]:.2f} pp RMSE ({1 - price[2] / price[0]:.0%} lower than survey alone).\n"
         f"- **Polling:** {poll[0]:.3f} → {poll[2]:.3f} SD RMSE. **A/B:** {ab[1]:.3f} raw → {ab[2]:.3f} calibrated.\n"
-        f"- **Individual prediction & probing:** zero-shot `JEV-9B J` matches the 78-item demographic baseline ({jev:.3f} vs. {demo:.3f}),\n"
-        f"  but on the 18 polling items replacing `argmax` ({jev_poll:.3f}) with expected value `E[Y]` reaches {ev_poll:.3f} and a\n"
-        f"  Layer 23 `[decision]:` linear probe reaches **{probe_poll:.3f}** (**{probe_78:.3f}** across all 78 signal items)."
+        f"- **Individual prediction:** zero-shot `JEV-9B J` matches the demographic baseline ({jev:.3f} vs. {demo:.3f} across 78 items).\n"
+        f"- **Hidden-state probing:** a Layer 23 ridge probe on `JEV-9B` lifts polling correlation from {jev_poll:.3f} to **{probe_poll:.3f}** (**{probe_78:.3f}** across all 78 items)."
     )
     refresh(twin.ROOT / "README.md", {"highlights": highlights})
     chart = twin.ROOT / "docs" / "calibration.svg"

@@ -1,28 +1,8 @@
 # PopSim
 
-Evaluate LLM "digital twins" against real human survey respondents—and test two ways a small
-(`N = 300`) human calibration sample can improve their predictions:
-1. **Aggregate calibration (`popsim.calibrate`):** debias population demand curves and subgroup polling gaps.
-2. **Hidden-state probing (`popsim.probes`):** read out `JEV-9B`'s internal activations to predict individual people's answers beyond what basic demographics or final LLM outputs capture.
-
-## Background
-
-PopSim is built on the [Twin-2K-500](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500)
-panel of **2,058 US adults**:
-
-- **Wave 1–3 personas (the input):** Every participant first answered ~500 questions covering
-  demographics, Big-5 personality, core values, cognitive reflection, and economic preferences.
-  Those answers are compiled into each person's **persona profile** (either a ~24k-token full
-  transcript or a ~3.2k-token narrative summary).
-- **Wave 4 target survey (what models predict):** Two weeks later, the same 2,058 people answered a
-  follow-up survey across three tasks:
-  - **Pricing (40 grocery offers):** Would they buy a product at a randomly offered price ($0\text{--}2\times$ median)? Scored by demand-curve RMSE in percentage points (`pp`).
-  - **Polling (18 opinion items):** 10 public-policy questions (`1–5` support scale) and 8 technology benefit/risk questions (`1–7` scale). Scored by demographic subgroup gap error (`SD`) and individual correlation (`r`).
-  - **A/B framing (16 behavioral experiments):** Classic between-subject framing contrasts (loss vs. gain, sunk cost, base rate, Allais). Scored by standardized treatment effect error (Cohen's `d`).
-- **Published twins vs. `JEV-9B`:**
-  - **Published twins:** Pre-computed Wave 4 responses from the Twin-2K-500 authors using `GPT-4.1-mini`, `GPT-4.1`, and `Gemini 2.5 Flash` prompted with each person's Wave 1–3 persona.
-  - **`JEV-9B`:** An open-weights 9B decision model ([`autotrust/JEV-9B`](https://huggingface.co/autotrust/JEV-9B)) that outputs a calibrated probability distribution over answer options (`J` = `argmax` most likely option, `P` = random sample, `E[Y]` = probability-weighted expected value).
-- **What we train the probe for:** Zero-shot LLM answers (`JEV-9B J`, `GPT-4.1-mini`) correlate with real individuals at `r ≈ 0.102` across all 78 shared Wave 4 questions—no better than a regression on **7 basic demographic attributes** (`r = 0.104`). To test whether `JEV-9B` internally extracts richer persona traits that its final decision head fails to express, we extract its **Layer 23 hidden state at the `[decision]:` token** and train a regularized linear ridge probe on **300 calibration participants** to predict the remaining **1,758 held-out participants**.
+Evaluate synthetic survey respondents against real people, then test how a small human
+survey improves their predictions. Built on
+[Twin-2K-500](https://huggingface.co/datasets/LLM-Digital-Twin/Twin-2K-500).
 
 ## Latest results
 
@@ -33,31 +13,32 @@ panel of **2,058 US adults**:
 <!-- START:highlights -->
 - **Pricing:** 17.26 → 8.87 pp RMSE (49% lower than survey alone).
 - **Polling:** 0.491 → 0.265 SD RMSE. **A/B:** 0.538 raw → 0.541 calibrated.
-- **Individual prediction & probing:** zero-shot `JEV-9B J` matches the 78-item demographic baseline (0.102 vs. 0.104),
-  but on the 18 polling items replacing `argmax` (0.263) with expected value `E[Y]` reaches 0.316 and a
-  Layer 23 `[decision]:` linear probe reaches **0.370** (**0.173** across all 78 signal items).
+- **Individual prediction:** zero-shot `JEV-9B J` matches the demographic baseline (0.102 vs. 0.104 across 78 items).
+- **Hidden-state probing:** a Layer 23 ridge probe on `JEV-9B` lifts polling correlation from 0.263 to **0.370** (**0.173** across all 78 items).
 <!-- END:highlights -->
 
-[Detailed tables, probing ablations, PC interpretation, and limits →](RESULTS.md)
+These results use one 2,058-person US panel with **existing rich profiles** and a 300-person
+calibration split (`1,758` held-out test participants). [Results and limits →](RESULTS.md)
 
-## How it works
+## Background and workflow
 
-```text
-Wave 1-3 persona profiles (2,058 US adults)
-  │
-  ├──► Published LLM twins (GPT-4.1 / Gemini) ──► Output answers ──────────────┐
-  │                                                                            ▼
-  └──► JEV-9B decision model ───────────────────► Layer 23 [decision]: states  │
-                                                    │                          │
-300-person Wave 4 calibration survey ───────────────┼──► Fit ridge probe       ├──► Fit linear calibration
-                                                    ▼                          ▼
-                                                  Predict 1,758 held-out people & held-out items
-```
+In Twin-2K-500, 2,058 US adults answered ~500 questions in Waves 1–3 covering demographics,
+personality, values, cognitive tests, and economic preferences. Those answers form each
+person's input profile (~24k tokens full, or ~3.2k tokens summarized). Two weeks later, the
+same people answered a Wave 4 survey across three tasks:
 
-| Workflow | Model Signal Used | Calibration Data (`N = 300`) | Target Predicted | Module |
+- **Pricing (40 grocery offers):** buy or pass at a random price from 0 to 2x median.
+- **Polling (18 items):** 10 public-policy and 8 technology benefit/risk questions.
+- **A/B framing (16 contrasts):** between-subject framing experiments (loss vs. gain, sunk cost, Allais).
+
+PopSim compares published responses (`GPT-4.1-mini`, `GPT-4.1`, `Gemini 2.5 Flash`) and
+open-weight [`JEV-9B`](https://huggingface.co/autotrust/JEV-9B) decisions against Wave 4 human
+answers along two paths:
+
+| Path | Input signal | 300-person survey | Target | Module |
 | --- | --- | --- | --- | --- |
-| **1. Aggregate calibration** | Published twin output answers | Surveyed subset of products / items | Population buy rates, subgroup polling gaps, and A/B effects on held-out items | `popsim.calibrate` |
-| **2. Hidden-state probing** | `JEV-9B` Layer 23 `[decision]:` activations (`4,096` dims) | 300 training participants' Wave 4 answers | Individual answers for the remaining **1,758 held-out participants** | `popsim.probes` |
+| **Aggregate calibration** | Published twin output answers | Surveyed subset of items | Population buy rates, subgroup polling gaps, and A/B effects on held-out items | `popsim.calibrate` |
+| **Hidden-state probing** | `JEV-9B` Layer 23 `[decision]:` activations | 300 training people's Wave 4 answers | Individual answers for the other 1,758 held-out people | `popsim.probes` |
 
 ## Try it
 
