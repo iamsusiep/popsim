@@ -102,3 +102,33 @@ def test_bundled_demo_runs_without_dataset_or_model(monkeypatch):
     monkeypatch.setattr(twin, "dataset_file", no_download)
     errors = demo.main()
     assert 0 < errors["survey + twins"] < errors["survey alone"]
+
+
+def test_dual_ridge_probe_matches_primal_and_never_reads_test_features():
+    from popsim import probes
+
+    rng = np.random.default_rng(7)
+    X_tr = rng.normal(size=(40, 120))
+    w_true = rng.normal(size=120)
+    y_tr = 3.5 + X_tr @ w_true + 0.1 * rng.normal(size=40)
+    X_te = rng.normal(size=(15, 120))
+
+    pred_dual, oof, alpha, _ = probes.dual_ridge_cv(X_tr, y_tr, X_te, alphas=(10.0,))
+    # Perturbing test rows must not change predictions on the first 5 test rows or OOF
+    X_te_corrupted = X_te.copy()
+    X_te_corrupted[5:] = 1e6
+    pred_dual_2, oof_2, _, _ = probes.dual_ridge_cv(X_tr, y_tr, X_te_corrupted, alphas=(10.0,))
+    np.testing.assert_allclose(pred_dual[:5], pred_dual_2[:5], rtol=1e-12, atol=1e-12)
+    np.testing.assert_allclose(oof, oof_2, rtol=1e-12, atol=1e-12)
+
+    # Verify exact algebraic match with primal ridge regression
+    mean_x = X_tr.mean(axis=0, keepdims=True)
+    std_x = X_tr.std(axis=0, keepdims=True)
+    Z_tr = (X_tr - mean_x) / std_x
+    Z_te = (X_te - mean_x) / std_x
+    Z_tr_i = np.column_stack([np.ones(len(X_tr)), Z_tr])
+    Z_te_i = np.column_stack([np.ones(len(X_te)), Z_te])
+    pen = alpha * np.eye(Z_tr_i.shape[1])
+    pen[0, 0] = 0.0
+    coef = np.linalg.solve(Z_tr_i.T @ Z_tr_i + pen, Z_tr_i.T @ y_tr)
+    np.testing.assert_allclose(pred_dual, Z_te_i @ coef, rtol=1e-10, atol=1e-10)

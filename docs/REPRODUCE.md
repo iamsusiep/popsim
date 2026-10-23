@@ -13,9 +13,10 @@ uv run pytest -m integration
 uv run python -m popsim.baselines
 uv run python -m popsim.uses
 uv run python -m popsim.calibrate
+uv run python -m popsim.probes
 ```
 
-These commands use published model outputs and need no API key or GPU. Scored local JEV
+These commands use published model outputs (and captured JEV-9B activations in `cache/probes/` for `popsim.probes`) and need no API key or GPU. Scored local JEV
 outputs are included when present. Individual responses and caches stay in ignored directories.
 
 ## Optional JEV-9B inference

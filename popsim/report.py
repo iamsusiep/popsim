@@ -81,7 +81,7 @@ def main() -> None:
     sources = {
         "calibration.json": "calibrate.json", "baselines.json": "baselines/scores.json",
         "person-signal.json": "signal.json", "use-cases.json": "uses.json",
-        "summary-n2058.json": "summary-n2058/scores.json",
+        "summary-n2058.json": "summary-n2058/scores.json", "probes.json": "probes.json",
     }
     if not args.from_artifacts:
         for name, source in sources.items():
@@ -94,6 +94,7 @@ def main() -> None:
             (out / name).write_text(encoded + "\n")
     baseline = json.loads((out / "baselines.json").read_text())["arms"]
     calibration = json.loads((out / "calibration.json").read_text())
+    probes_data = json.loads((out / "probes.json").read_text())
     baseline_table = table(["Arm", "Similarity", "Correlation"], [
         [name, f"{r['accuracy']:.3f}", f"{r['person_signal']:.3f}"] for name, r in baseline.items()
     ])
@@ -103,15 +104,57 @@ def main() -> None:
         for use, (title, _, surveyed, metric) in CASES.items()
     ])
     calibration_table += "\n\n¹ Survey averages for pricing/polling; zero effect for A/B. Twins = published-model ensemble."
-    refresh(twin.ROOT / "RESULTS.md", {"baselines": baseline_table, "calibration": calibration_table})
+    probe_arms = (
+        "Demographic ridge (rounded, lam=10)",
+        "Demographic ridge (continuous, CV)",
+        "Persona TF-IDF ridge (300 train)",
+        "JEV-9B P (sampled, zero-shot)",
+        "JEV-9B J (argmax, zero-shot)",
+        "JEV-9B E[Y] (prob expectation, zero-shot)",
+        "JEV-9B probs ridge (300 train)",
+        "Demographics + JEV probs (concat ridge)",
+        "Probe [state] Layer 19 (best [state])",
+        "Probe [decision] Layer 7",
+        "Probe [decision] Layer 15",
+        "Probe [decision] Layer 23",
+        "Probe [decision] Layer 31",
+        "Probe [decision] Layer 23 (PCA top-128)",
+        "Residual Probe (JEV E[Y] + Layer 23 probe)",
+        "Decomp A: Mean [decision] from other 17 Qs",
+        "Shuffle Check: Within-Demo-Stratum Permute",
+        "Shuffle Check: Global Persona Permute",
+        "Humans, retest (wave 1-3 ceiling)",
+    )
+    pm = probes_data["polling_metrics"]
+    probes_table = table(
+        ["Arm (18 polling items)", "r (W1–3)", "r (W4)", "Partial r (given demo)", "Similarity", "Gap RMSE (SD)", "Gap ratio"],
+        [
+            [
+                arm,
+                f"{pm[arm]['corr_w1_3']:.3f}",
+                f"{pm[arm]['corr_w4']:.3f}",
+                f"{pm[arm]['partial_r_w1_3|demo']:.3f}",
+                f"{pm[arm]['sim_w1_3']:.3f}",
+                f"{pm[arm]['gap_err_SD']:.3f}",
+                f"{pm[arm]['gap_ratio']:.3f}",
+            ]
+            for arm in probe_arms
+        ],
+    )
+    refresh(twin.ROOT / "RESULTS.md", {"baselines": baseline_table, "calibration": calibration_table, "probes": probes_table})
     price, poll, ab = (errors(calibration, use) for use in CASES)
     demo = baseline["demographic ridge, 300 training humans"]["person_signal"]
     jev = baseline["JEV-9B J, summary"]["person_signal"]
+    probe_78 = probes_data["all_78_signal_items"]["Reusable Layer 23 Person Embedding Probe"]["person_signal"]
+    probe_poll = pm["Probe [decision] Layer 23"]["corr_w1_3"]
+    ev_poll = pm["JEV-9B E[Y] (prob expectation, zero-shot)"]["corr_w1_3"]
+    jev_poll = pm["JEV-9B J (argmax, zero-shot)"]["corr_w1_3"]
     highlights = (
         f"- **Pricing:** {price[0]:.2f} → {price[2]:.2f} pp RMSE ({1 - price[2] / price[0]:.0%} lower than survey alone).\n"
         f"- **Polling:** {poll[0]:.3f} → {poll[2]:.3f} SD RMSE. **A/B:** {ab[1]:.3f} raw → {ab[2]:.3f} calibrated.\n"
-        f"- **Individual prediction:** demographic baseline correlation ({demo:.3f}) matches JEV-9B ({jev:.3f});\n"
-        "  the current metric does not establish individual-specific knowledge."
+        f"- **Individual prediction & probing:** zero-shot `JEV-9B J` matches the 78-item demographic baseline ({jev:.3f} vs. {demo:.3f}),\n"
+        f"  but on the 18 polling items replacing `argmax` ({jev_poll:.3f}) with expected value `E[Y]` reaches {ev_poll:.3f} and a\n"
+        f"  Layer 23 `[decision]:` linear probe reaches **{probe_poll:.3f}** (**{probe_78:.3f}** across all 78 signal items)."
     )
     refresh(twin.ROOT / "README.md", {"highlights": highlights})
     chart = twin.ROOT / "docs" / "calibration.svg"

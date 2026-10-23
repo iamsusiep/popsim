@@ -1,0 +1,710 @@
+{
+  "n_train": 300,
+  "n_test": 1758,
+  "layers": [
+    7,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "polling_metrics": {
+    "Demographic ridge (rounded, lam=10)": {
+      "corr_w1_3": 0.2703,
+      "corr_w4": 0.2685,
+      "partial_r_w1_3|demo": -0.0101,
+      "partial_r_w4|demo": -0.0126,
+      "sim_w1_3": 0.797,
+      "topline_err": 0.023,
+      "gap_err_SD": 0.1332,
+      "gap_ratio": 0.9003
+    },
+    "Demographic ridge (continuous, CV)": {
+      "corr_w1_3": 0.3162,
+      "corr_w4": 0.3167,
+      "partial_r_w1_3|demo": 0.0,
+      "partial_r_w4|demo": 0.0,
+      "sim_w1_3": 0.7923,
+      "topline_err": 0.0231,
+      "gap_err_SD": 0.1174,
+      "gap_ratio": 0.8345
+    },
+    "Persona TF-IDF ridge (300 train)": {
+      "corr_w1_3": 0.1804,
+      "corr_w4": 0.1822,
+      "partial_r_w1_3|demo": 0.0532,
+      "partial_r_w4|demo": 0.0537,
+      "sim_w1_3": 0.7789,
+      "topline_err": 0.0185,
+      "gap_err_SD": 0.238,
+      "gap_ratio": 0.2526
+    },
+    "JEV-9B P (sampled, zero-shot)": {
+      "corr_w1_3": 0.2108,
+      "corr_w4": 0.2099,
+      "partial_r_w1_3|demo": 0.0955,
+      "partial_r_w4|demo": 0.0935,
+      "sim_w1_3": 0.6716,
+      "topline_err": 0.362,
+      "gap_err_SD": 0.2349,
+      "gap_ratio": 1.3324
+    },
+    "JEV-9B J (argmax, zero-shot)": {
+      "corr_w1_3": 0.2627,
+      "corr_w4": 0.2544,
+      "partial_r_w1_3|demo": 0.138,
+      "partial_r_w4|demo": 0.1253,
+      "sim_w1_3": 0.6992,
+      "topline_err": 0.4044,
+      "gap_err_SD": 0.2997,
+      "gap_ratio": 1.6543
+    },
+    "JEV-9B E[Y] (prob expectation, zero-shot)": {
+      "corr_w1_3": 0.3164,
+      "corr_w4": 0.3121,
+      "partial_r_w1_3|demo": 0.1848,
+      "partial_r_w4|demo": 0.1749,
+      "sim_w1_3": 0.7172,
+      "topline_err": 0.3589,
+      "gap_err_SD": 0.2268,
+      "gap_ratio": 1.3177
+    },
+    "JEV-9B probs ridge (300 train)": {
+      "corr_w1_3": 0.3039,
+      "corr_w4": 0.301,
+      "partial_r_w1_3|demo": 0.1713,
+      "partial_r_w4|demo": 0.1638,
+      "sim_w1_3": 0.7964,
+      "topline_err": 0.0288,
+      "gap_err_SD": 0.1423,
+      "gap_ratio": 0.8132
+    },
+    "JEV-9B logprobs ridge (300 train)": {
+      "corr_w1_3": 0.3069,
+      "corr_w4": 0.3055,
+      "partial_r_w1_3|demo": 0.1698,
+      "partial_r_w4|demo": 0.1648,
+      "sim_w1_3": 0.7962,
+      "topline_err": 0.0278,
+      "gap_err_SD": 0.1415,
+      "gap_ratio": 0.8332
+    },
+    "Demographics + JEV probs (concat ridge)": {
+      "corr_w1_3": 0.3427,
+      "corr_w4": 0.3399,
+      "partial_r_w1_3|demo": 0.1521,
+      "partial_r_w4|demo": 0.1439,
+      "sim_w1_3": 0.7963,
+      "topline_err": 0.0263,
+      "gap_err_SD": 0.1066,
+      "gap_ratio": 0.857
+    },
+    "Probe [state] Layer 19 (best [state])": {
+      "corr_w1_3": 0.1218,
+      "corr_w4": 0.1195,
+      "partial_r_w1_3|demo": 0.0574,
+      "partial_r_w4|demo": 0.0548,
+      "sim_w1_3": 0.7741,
+      "topline_err": 0.0185,
+      "gap_err_SD": 0.277,
+      "gap_ratio": 0.096
+    },
+    "Probe [decision] Layer 7": {
+      "corr_w1_3": 0.0733,
+      "corr_w4": 0.067,
+      "partial_r_w1_3|demo": 0.0331,
+      "partial_r_w4|demo": 0.0262,
+      "sim_w1_3": 0.7721,
+      "topline_err": 0.0184,
+      "gap_err_SD": 0.2883,
+      "gap_ratio": 0.0463
+    },
+    "Probe [decision] Layer 15": {
+      "corr_w1_3": 0.3576,
+      "corr_w4": 0.3549,
+      "partial_r_w1_3|demo": 0.2076,
+      "partial_r_w4|demo": 0.2,
+      "sim_w1_3": 0.7986,
+      "topline_err": 0.0301,
+      "gap_err_SD": 0.0995,
+      "gap_ratio": 0.906
+    },
+    "Probe [decision] Layer 19": {
+      "corr_w1_3": 0.3687,
+      "corr_w4": 0.3688,
+      "partial_r_w1_3|demo": 0.225,
+      "partial_r_w4|demo": 0.2219,
+      "sim_w1_3": 0.8,
+      "topline_err": 0.0282,
+      "gap_err_SD": 0.1014,
+      "gap_ratio": 0.8828
+    },
+    "Probe [decision] Layer 23": {
+      "corr_w1_3": 0.3696,
+      "corr_w4": 0.3705,
+      "partial_r_w1_3|demo": 0.2261,
+      "partial_r_w4|demo": 0.2238,
+      "sim_w1_3": 0.8002,
+      "topline_err": 0.0298,
+      "gap_err_SD": 0.1024,
+      "gap_ratio": 0.8966
+    },
+    "Probe [decision] Layer 27": {
+      "corr_w1_3": 0.3669,
+      "corr_w4": 0.3673,
+      "partial_r_w1_3|demo": 0.2238,
+      "partial_r_w4|demo": 0.2209,
+      "sim_w1_3": 0.8001,
+      "topline_err": 0.0301,
+      "gap_err_SD": 0.1038,
+      "gap_ratio": 0.8957
+    },
+    "Probe [decision] Layer 31": {
+      "corr_w1_3": 0.3665,
+      "corr_w4": 0.3657,
+      "partial_r_w1_3|demo": 0.2223,
+      "partial_r_w4|demo": 0.2186,
+      "sim_w1_3": 0.8001,
+      "topline_err": 0.0296,
+      "gap_err_SD": 0.1024,
+      "gap_ratio": 0.8936
+    },
+    "Probe [decision] Layer 23 (PCA top-128)": {
+      "corr_w1_3": 0.3685,
+      "corr_w4": 0.3659,
+      "partial_r_w1_3|demo": 0.225,
+      "partial_r_w4|demo": 0.2198,
+      "sim_w1_3": 0.8008,
+      "topline_err": 0.0294,
+      "gap_err_SD": 0.0916,
+      "gap_ratio": 0.9571
+    },
+    "Residual Probe (JEV E[Y] + Layer 23 probe)": {
+      "corr_w1_3": 0.3709,
+      "corr_w4": 0.3719,
+      "partial_r_w1_3|demo": 0.2274,
+      "partial_r_w4|demo": 0.2247,
+      "sim_w1_3": 0.8013,
+      "topline_err": 0.0319,
+      "gap_err_SD": 0.1047,
+      "gap_ratio": 0.9814
+    },
+    "Decomp A: Mean [decision] from other 17 Qs": {
+      "corr_w1_3": 0.3687,
+      "corr_w4": 0.3683,
+      "partial_r_w1_3|demo": 0.2236,
+      "partial_r_w4|demo": 0.2216,
+      "sim_w1_3": 0.799,
+      "topline_err": 0.0289,
+      "gap_err_SD": 0.1005,
+      "gap_ratio": 0.8596
+    },
+    "Decomp B: Question-specific [decision] delta": {
+      "corr_w1_3": 0.364,
+      "corr_w4": 0.3632,
+      "partial_r_w1_3|demo": 0.2237,
+      "partial_r_w4|demo": 0.2195,
+      "sim_w1_3": 0.8006,
+      "topline_err": 0.0271,
+      "gap_err_SD": 0.108,
+      "gap_ratio": 0.8652
+    },
+    "Shuffle Check: Within-Demo-Stratum Permute": {
+      "corr_w1_3": 0.2757,
+      "corr_w4": 0.2764,
+      "partial_r_w1_3|demo": 0.1033,
+      "partial_r_w4|demo": 0.101,
+      "sim_w1_3": 0.7907,
+      "topline_err": 0.0298,
+      "gap_err_SD": 0.1122,
+      "gap_ratio": 0.8754
+    },
+    "Shuffle Check: Global Persona Permute": {
+      "corr_w1_3": 0.0113,
+      "corr_w4": 0.0109,
+      "partial_r_w1_3|demo": 0.0106,
+      "partial_r_w4|demo": 0.0107,
+      "sim_w1_3": 0.7554,
+      "topline_err": 0.0298,
+      "gap_err_SD": 0.3097,
+      "gap_ratio": 0.0133
+    },
+    "Humans, retest (wave 1-3 ceiling)": {
+      "corr_w1_3": 1.0,
+      "corr_w4": 0.6568,
+      "partial_r_w1_3|demo": 1.0,
+      "partial_r_w4|demo": 0.6147,
+      "sim_w1_3": 1.0,
+      "topline_err": 0.0195,
+      "gap_err_SD": 0.0373,
+      "gap_ratio": 1.0001
+    }
+  },
+  "bootstrap_ci95_corr_w1_3": {
+    "Probe L23 vs JEV-9B J (argmax)": {
+      "delta": 0.1069,
+      "ci95": [
+        0.0736,
+        0.1413
+      ],
+      "wins_of_18": 17
+    },
+    "Probe L23 vs JEV-9B E[Y] (zero-shot)": {
+      "delta": 0.0532,
+      "ci95": [
+        0.0283,
+        0.0804
+      ],
+      "wins_of_18": 14
+    },
+    "Probe L23 vs JEV-9B probs ridge": {
+      "delta": 0.0657,
+      "ci95": [
+        0.0339,
+        0.1025
+      ],
+      "wins_of_18": 17
+    },
+    "Probe L23 vs Demographic ridge (continuous)": {
+      "delta": 0.0534,
+      "ci95": [
+        0.0336,
+        0.0721
+      ],
+      "wins_of_18": 15
+    },
+    "Probe L23 vs Demographics + JEV probs": {
+      "delta": 0.0269,
+      "ci95": [
+        0.0138,
+        0.0399
+      ],
+      "wins_of_18": 16
+    },
+    "Probe L23 PCA-128 vs JEV-9B probs ridge": {
+      "delta": 0.0646,
+      "ci95": [
+        0.0309,
+        0.1013
+      ],
+      "wins_of_18": 16
+    }
+  },
+  "all_78_signal_items": {
+    "JEV-9B J (argmax)": {
+      "person_signal": 0.1019,
+      "disattenuated": 0.1536
+    },
+    "Demographic ridge (continuous, CV)": {
+      "person_signal": 0.1348,
+      "disattenuated": 0.2465
+    },
+    "Reusable Layer 23 Person Embedding Probe": {
+      "person_signal": 0.173,
+      "disattenuated": 0.3261
+    }
+  },
+  "layer23_pc_interpretation": [
+    {
+      "pc": "PC1",
+      "var_explained": 0.3141,
+      "demo_r2": 0.7579,
+      "non_demo_share": 0.2421,
+      "loadings_human": {
+        "policy": 0.3664,
+        "tech_benefit": -0.025,
+        "tech_risk": 0.0923
+      },
+      "loadings_jev_ey": {
+        "policy": 0.4732,
+        "tech_benefit": -0.2063,
+        "tech_risk": -0.1051
+      },
+      "top_correlates": [
+        {
+          "col": "QID22",
+          "r": 0.479,
+          "desc": "[Demographics] In general, would you describe your political views as"
+        },
+        {
+          "col": "QID235_3",
+          "r": 0.4268,
+          "desc": "[Personality] My purchase habits are affected by my concern for our environment."
+        },
+        {
+          "col": "QID235_6",
+          "r": 0.4093,
+          "desc": "[Personality] I am willing to be inconvenienced in order to take actions that are mo"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID235_3",
+          "partial_r": 0.4639,
+          "desc": "[Personality] My purchase habits are affected by my concern for our environment."
+        },
+        {
+          "col": "QID235_5",
+          "partial_r": 0.4249,
+          "desc": "[Personality] I would describe myself as environmentally responsible."
+        },
+        {
+          "col": "QID235_2",
+          "partial_r": 0.4134,
+          "desc": "[Personality] I consider the potential environmental impact of my actions when makin"
+        }
+      ]
+    },
+    {
+      "pc": "PC2",
+      "var_explained": 0.175,
+      "demo_r2": 0.7162,
+      "non_demo_share": 0.2838,
+      "loadings_human": {
+        "policy": -0.5863,
+        "tech_benefit": 0.0468,
+        "tech_risk": -0.1041
+      },
+      "loadings_jev_ey": {
+        "policy": -0.829,
+        "tech_benefit": -0.4069,
+        "tech_risk": 0.0123
+      },
+      "top_correlates": [
+        {
+          "col": "QID22",
+          "r": -0.6515,
+          "desc": "[Demographics] In general, would you describe your political views as"
+        },
+        {
+          "col": "QID20",
+          "r": -0.5637,
+          "desc": "[Demographics] In politics today, do you consider yourself a"
+        },
+        {
+          "col": "QID287_4",
+          "r": -0.5011,
+          "desc": "[False consensus] A \u2018Medicare for All\u2019 system in which all Americans would get healthcar"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID235_1",
+          "partial_r": -0.5452,
+          "desc": "[Personality] It is important to me that the products I use do not harm the environm"
+        },
+        {
+          "col": "QID235_2",
+          "partial_r": -0.5307,
+          "desc": "[Personality] I consider the potential environmental impact of my actions when makin"
+        },
+        {
+          "col": "QID235_4",
+          "partial_r": -0.5007,
+          "desc": "[Personality] I am concerned about wasting the resources of our planet."
+        }
+      ]
+    },
+    {
+      "pc": "PC3",
+      "var_explained": 0.0997,
+      "demo_r2": 0.3615,
+      "non_demo_share": 0.6385,
+      "loadings_human": {
+        "policy": -0.1099,
+        "tech_benefit": 0.0508,
+        "tech_risk": -0.0437
+      },
+      "loadings_jev_ey": {
+        "policy": -0.107,
+        "tech_benefit": 0.6,
+        "tech_risk": -0.1295
+      },
+      "top_correlates": [
+        {
+          "col": "QID25_4",
+          "r": -0.3737,
+          "desc": "[Personality] Is depressed, blue"
+        },
+        {
+          "col": "QID20",
+          "r": -0.3684,
+          "desc": "[Demographics] In politics today, do you consider yourself a"
+        },
+        {
+          "col": "QID25_24",
+          "r": 0.3569,
+          "desc": "[Personality] Is emotionally stable, not easily upset"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID235_1",
+          "partial_r": 0.381,
+          "desc": "[Personality] It is important to me that the products I use do not harm the environm"
+        },
+        {
+          "col": "QID235_5",
+          "partial_r": 0.3618,
+          "desc": "[Personality] I would describe myself as environmentally responsible."
+        },
+        {
+          "col": "QID235_2",
+          "partial_r": 0.3614,
+          "desc": "[Personality] I consider the potential environmental impact of my actions when makin"
+        }
+      ]
+    },
+    {
+      "pc": "PC4",
+      "var_explained": 0.0496,
+      "demo_r2": 0.135,
+      "non_demo_share": 0.865,
+      "loadings_human": {
+        "policy": -0.0253,
+        "tech_benefit": -0.0371,
+        "tech_risk": -0.0219
+      },
+      "loadings_jev_ey": {
+        "policy": 0.0835,
+        "tech_benefit": 0.0164,
+        "tech_risk": -0.7498
+      },
+      "top_correlates": [
+        {
+          "col": "QID237_8",
+          "r": -0.3731,
+          "desc": "[Personality] My beliefs about myself seem to change very frequently."
+        },
+        {
+          "col": "QID25_4",
+          "r": -0.3646,
+          "desc": "[Personality] Is depressed, blue"
+        },
+        {
+          "col": "QID237_4",
+          "r": -0.3583,
+          "desc": "[Personality] Sometimes I feel that I am not really the person that I appear to be."
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID25_4",
+          "partial_r": -0.3365,
+          "desc": "[Personality] Is depressed, blue"
+        },
+        {
+          "col": "QID237_4",
+          "partial_r": -0.3322,
+          "desc": "[Personality] Sometimes I feel that I am not really the person that I appear to be."
+        },
+        {
+          "col": "QID125_5",
+          "partial_r": -0.332,
+          "desc": "[Personality] Fear of the worst happening"
+        }
+      ]
+    },
+    {
+      "pc": "PC5",
+      "var_explained": 0.0479,
+      "demo_r2": 0.3162,
+      "non_demo_share": 0.6838,
+      "loadings_human": {
+        "policy": 0.0377,
+        "tech_benefit": -0.1852,
+        "tech_risk": 0.0511
+      },
+      "loadings_jev_ey": {
+        "policy": 0.0513,
+        "tech_benefit": -0.1996,
+        "tech_risk": -0.2322
+      },
+      "top_correlates": [
+        {
+          "col": "QID29_3",
+          "r": 0.3416,
+          "desc": "[Personality] FORGIVENESS (pardoning others\u2019 faults, being merciful)"
+        },
+        {
+          "col": "QID25_17",
+          "r": 0.3204,
+          "desc": "[Personality] Has a forgiving nature"
+        },
+        {
+          "col": "QID25_27",
+          "r": -0.3182,
+          "desc": "[Personality] Can be cold and aloof"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID29_3",
+          "partial_r": 0.3348,
+          "desc": "[Personality] FORGIVENESS (pardoning others\u2019 faults, being merciful)"
+        },
+        {
+          "col": "QID25_17",
+          "partial_r": 0.334,
+          "desc": "[Personality] Has a forgiving nature"
+        },
+        {
+          "col": "QID25_27",
+          "partial_r": -0.2938,
+          "desc": "[Personality] Can be cold and aloof"
+        }
+      ]
+    },
+    {
+      "pc": "PC6",
+      "var_explained": 0.0344,
+      "demo_r2": 0.2373,
+      "non_demo_share": 0.7627,
+      "loadings_human": {
+        "policy": 0.063,
+        "tech_benefit": 0.0086,
+        "tech_risk": 0.0172
+      },
+      "loadings_jev_ey": {
+        "policy": 0.1356,
+        "tech_benefit": -0.2733,
+        "tech_risk": 0.1436
+      },
+      "top_correlates": [
+        {
+          "col": "QID25_11",
+          "r": -0.4273,
+          "desc": "[Personality] Is full of energy"
+        },
+        {
+          "col": "QID25_16",
+          "r": -0.3661,
+          "desc": "[Personality] Generates a lot of enthusiasm"
+        },
+        {
+          "col": "QID25_4",
+          "r": 0.3627,
+          "desc": "[Personality] Is depressed, blue"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID25_11",
+          "partial_r": -0.3584,
+          "desc": "[Personality] Is full of energy"
+        },
+        {
+          "col": "QID25_16",
+          "partial_r": -0.3275,
+          "desc": "[Personality] Generates a lot of enthusiasm"
+        },
+        {
+          "col": "QID25_36",
+          "partial_r": -0.3111,
+          "desc": "[Personality] Is outgoing, sociable"
+        }
+      ]
+    },
+    {
+      "pc": "PC7",
+      "var_explained": 0.0291,
+      "demo_r2": 0.2962,
+      "non_demo_share": 0.7038,
+      "loadings_human": {
+        "policy": 0.0246,
+        "tech_benefit": -0.1487,
+        "tech_risk": 0.1049
+      },
+      "loadings_jev_ey": {
+        "policy": 0.0477,
+        "tech_benefit": -0.0901,
+        "tech_risk": 0.0899
+      },
+      "top_correlates": [
+        {
+          "col": "QID29_17",
+          "r": 0.2784,
+          "desc": "[Personality] COMPASSION (caring for others, displaying kindness)"
+        },
+        {
+          "col": "QID20",
+          "r": 0.2726,
+          "desc": "[Demographics] In politics today, do you consider yourself a"
+        },
+        {
+          "col": "QID29_3",
+          "r": 0.2685,
+          "desc": "[Personality] FORGIVENESS (pardoning others\u2019 faults, being merciful)"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID25_32",
+          "partial_r": 0.2875,
+          "desc": "[Personality] Is considerate and kind to almost everyone"
+        },
+        {
+          "col": "QID29_3",
+          "partial_r": 0.2851,
+          "desc": "[Personality] FORGIVENESS (pardoning others\u2019 faults, being merciful)"
+        },
+        {
+          "col": "QID25_17",
+          "partial_r": 0.2838,
+          "desc": "[Personality] Has a forgiving nature"
+        }
+      ]
+    },
+    {
+      "pc": "PC8",
+      "var_explained": 0.0271,
+      "demo_r2": 0.1505,
+      "non_demo_share": 0.8495,
+      "loadings_human": {
+        "policy": -0.0722,
+        "tech_benefit": 0.0029,
+        "tech_risk": -0.0308
+      },
+      "loadings_jev_ey": {
+        "policy": -0.1416,
+        "tech_benefit": 0.1729,
+        "tech_risk": 0.149
+      },
+      "top_correlates": [
+        {
+          "col": "QID25_36",
+          "r": 0.2562,
+          "desc": "[Personality] Is outgoing, sociable"
+        },
+        {
+          "col": "QID35_7",
+          "r": -0.2499,
+          "desc": "[Personality] I keep the aesthetic in my home very sparse"
+        },
+        {
+          "col": "QID35_2",
+          "r": -0.2499,
+          "desc": "[Personality] I restrict the number of things I own"
+        }
+      ],
+      "top_beyond_demo_correlates": [
+        {
+          "col": "QID35_7",
+          "partial_r": -0.2842,
+          "desc": "[Personality] I keep the aesthetic in my home very sparse"
+        },
+        {
+          "col": "QID25_1",
+          "partial_r": 0.2767,
+          "desc": "[Personality] Is talkative"
+        },
+        {
+          "col": "QID35_2",
+          "partial_r": -0.2734,
+          "desc": "[Personality] I restrict the number of things I own"
+        }
+      ]
+    }
+  ]
+}
